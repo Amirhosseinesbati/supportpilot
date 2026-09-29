@@ -28,7 +28,14 @@ FastAPI · React · LangGraph · PostgreSQL/pgvector
 
 ### Evidence and scope
 
-23 backend tests passed; 160/160 synthetic evaluation predictions completed. See the evaluation report for denominators and limitations. The included demo uses synthetic data and local simulators. Deployment and live-provider limits are documented in [implementation status](docs/IMPLEMENTATION_STATUS.md).
+| Evidence | Observed result | Scope |
+| --- | --- | --- |
+| DEMO graph coverage | 160/160 generated conversations; 120/120 held-out scored | Deterministic local graph, synthetic labels |
+| Grounded structured claims | 60/60 exact matches | Held-out proxy; sentence-level support still needs human review |
+| Retrieval comparison | Lexical 69/80 vs local hybrid 80/80 at rank 1 | SQLite fixture, acceptable source-version ID |
+| Connected-model quality | Not measured | Human passage review and provider run remain pending |
+
+See the [evaluation report](docs/EVALUATION.md), [scored run](evals/results/model_run.md), and [retrieval comparison](evals/results/retrieval_comparison.md). The 40 reserved human-review rows are still pending; the reported proxy scores are not proof of passage-level grounding.
 
 ## Getting started
 
