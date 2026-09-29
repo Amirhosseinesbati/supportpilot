@@ -1,0 +1,71 @@
+services:
+  db:
+    image: pgvector/pgvector:0.8.6-pg17-bookworm
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-supportpilot}
+      POSTGRES_USER: ${POSTGRES_USER:-supportpilot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-supportpilot} -d ${POSTGRES_DB:-supportpilot}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      APP_MODE: CONNECTED
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-supportpilot}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@db:5432/${POSTGRES_DB:-supportpilot}
+      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      UPLOAD_ROOT: /app/data/uploads
+      MAX_UPLOAD_BYTES: ${MAX_UPLOAD_BYTES:-10485760}
+      REFERENCE_DATE: ${REFERENCE_DATE:-2026-09-27}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?Set OPENAI_API_KEY in .env}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+      MODEL_MAX_OUTPUT_TOKENS: ${MODEL_MAX_OUTPUT_TOKENS:-700}
+      MODEL_MAX_INPUT_CHARS: ${MODEL_MAX_INPUT_CHARS:-16000}
+      MODEL_MAX_PASSAGE_CHARS: ${MODEL_MAX_PASSAGE_CHARS:-1000}
+      COMMERCE_ADAPTER: ${COMMERCE_ADAPTER:-local}
+      SHOPIFY_SHOP_DOMAIN: ${SHOPIFY_SHOP_DOMAIN:-}
+      SHOPIFY_ACCESS_TOKEN: ${SHOPIFY_ACCESS_TOKEN:-}
+      SHOPIFY_API_VERSION: ${SHOPIFY_API_VERSION:-2026-07}
+      SUPPORT_ADAPTER: ${SUPPORT_ADAPTER:-local}
+      ZENDESK_SUBDOMAIN: ${ZENDESK_SUBDOMAIN:-}
+      ZENDESK_EMAIL: ${ZENDESK_EMAIL:-}
+      ZENDESK_API_TOKEN: ${ZENDESK_API_TOKEN:-}
+    volumes:
+      - uploads_data:/app/data/uploads
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    environment:
+      VITE_API_PROXY_TARGET: http://api:8000
+    ports:
+      - "127.0.0.1:5173:5173"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  uploads_data:

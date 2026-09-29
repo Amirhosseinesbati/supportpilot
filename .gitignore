@@ -1,0 +1,41 @@
+# Local configuration and credentials
+.env
+**/.env
+!.env.example
+
+# Python and local tooling
+**/__pycache__/
+*.py[cod]
+**/.venv/
+.uv-cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+
+# JavaScript build/install artifacts
+**/node_modules/
+apps/web/dist/
+**/*.tsbuildinfo
+
+# Generated runtime and large reproducible demo data
+data/
+apps/api/data/
+fixtures/demo_full.json
+*.db
+*.db-wal
+*.db-shm
+*.db.checkpoints
+*.db.checkpoints-wal
+*.db.checkpoints-shm
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local product brief; excluded from the public portfolio repository.
+/01-supportpilot.md

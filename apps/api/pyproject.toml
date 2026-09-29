@@ -1,0 +1,46 @@
+[project]
+name = "supportpilot-api"
+version = "0.1.0"
+description = "Evidence-based support workspace for Northstar Supply"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "sqlalchemy>=2.0,<3",
+  "alembic>=1.15,<2",
+  "psycopg[binary]>=3.2,<4",
+  "pgvector>=0.4,<1",
+  "pydantic-settings>=2.8,<3",
+  "python-multipart>=0.0.20,<1",
+  "pypdf>=5,<7",
+  "argon2-cffi>=23,<26",
+  "langchain>=1,<2",
+  "langchain-core>=1,<2",
+  "langchain-text-splitters>=0.3,<2",
+  "langgraph>=1,<2",
+  "langgraph-checkpoint-postgres>=2,<4",
+  "langgraph-checkpoint-sqlite>=2,<4",
+  "langchain-openai>=0.3,<2",
+  "httpx>=0.28,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "mypy>=1.15,<2"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/supportpilot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B008", "E501"]

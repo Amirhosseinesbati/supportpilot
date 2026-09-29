@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.11.28"
+          python-version: "3.12"
+      - name: Install locked API dependencies
+        run: uv sync --locked --extra dev
+      - name: Generate deterministic fixtures
+        run: |
+          uv run python ../../scripts/generate_demo.py
+          uv run python ../../scripts/generate_evals.py
+      - name: Lint and type check
+        run: |
+          uv run ruff check src/supportpilot tests ../../evals/run_demo.py ../../scripts/purge_content.py ../../scripts/check_purge_content.py
+          uv run mypy src/supportpilot --follow-imports=silent --ignore-missing-imports
+      - name: Export OpenAPI schema
+        run: uv run python -c 'import json; from pathlib import Path; from supportpilot.api import app; Path("../../openapi.json").write_text(json.dumps(app.openapi()), encoding="utf-8")'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: supportpilot-openapi
+          path: openapi.json
+      - name: Fresh SQLite migration
+        env:
+          APP_MODE: DEMO
+          DATABASE_URL: sqlite:///./data/ci_migration.db
+        run: |
+          mkdir -p data
+          uv run alembic upgrade head
+      - name: Integration tests
+        run: uv run pytest -q
+      - name: Disposable retention scope check
+        run: uv run python ../../scripts/check_purge_content.py
+
+  web:
+    needs: api
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24.19.0"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: "11.19.0"
+          run_install: false
+      - name: Install locked web dependencies
+        run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v4
+        with:
+          name: supportpilot-openapi
+          path: .
+      - name: Build and check OpenAPI client contract
+        env:
+          OPENAPI_FILE: ../../openapi.json
+        run: pnpm check

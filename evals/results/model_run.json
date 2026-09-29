@@ -1,0 +1,207 @@
+{
+  "status": "scored",
+  "kind": "structured_prediction_assessment",
+  "predictions_sha256": "4c837b874d4941a8b23e9a98e7af78a4da0140c372bfc1f5ee294fd51f251f29",
+  "total_predictions": 160,
+  "split_results": {
+    "development": {
+      "coverage": {
+        "numerator": 40,
+        "denominator": 40,
+        "rate": 1.0
+      },
+      "by_category": {
+        "grounded": {
+          "submitted": 20,
+          "total": 20
+        },
+        "insufficient_or_conflicting": {
+          "submitted": 6,
+          "total": 6
+        },
+        "tool_action": {
+          "submitted": 6,
+          "total": 6
+        },
+        "security": {
+          "submitted": 4,
+          "total": 4
+        },
+        "policy_date_edge": {
+          "submitted": 4,
+          "total": 4
+        }
+      },
+      "structured_claim_exact_match": {
+        "numerator": 29,
+        "denominator": 32,
+        "rate": 0.90625
+      },
+      "grounded_structured_claim_exact_match": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "action_match": {
+        "numerator": 40,
+        "denominator": 40,
+        "rate": 1.0
+      },
+      "citation_precision_on_emitted_ids": {
+        "numerator": 29,
+        "denominator": 34,
+        "rate": 0.8529411764705882
+      },
+      "grounded_citation_id_precision": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "required_citation_recall": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "missing_evidence_clarify_or_abstain": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "resolvable_conflict_cited_answer": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "security_denial_no_forbidden_fragment": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0
+      },
+      "tool_action_structured_match": {
+        "numerator": 5,
+        "denominator": 6,
+        "rate": 0.8333333333333334
+      },
+      "latency_ms": {
+        "count": 40,
+        "p50": 71.13,
+        "p95": 94.53499999999998
+      },
+      "first_token_ms": {
+        "count": 0,
+        "p50": null,
+        "p95": null
+      },
+      "tool_success": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "cost_usd_per_submitted_case": {
+        "count": 40,
+        "mean": 0.0
+      }
+    },
+    "held_out": {
+      "coverage": {
+        "numerator": 120,
+        "denominator": 120,
+        "rate": 1.0
+      },
+      "by_category": {
+        "grounded": {
+          "submitted": 60,
+          "total": 60
+        },
+        "insufficient_or_conflicting": {
+          "submitted": 19,
+          "total": 19
+        },
+        "tool_action": {
+          "submitted": 19,
+          "total": 19
+        },
+        "security": {
+          "submitted": 11,
+          "total": 11
+        },
+        "policy_date_edge": {
+          "submitted": 11,
+          "total": 11
+        }
+      },
+      "structured_claim_exact_match": {
+        "numerator": 90,
+        "denominator": 97,
+        "rate": 0.9278350515463918
+      },
+      "grounded_structured_claim_exact_match": {
+        "numerator": 60,
+        "denominator": 60,
+        "rate": 1.0
+      },
+      "action_match": {
+        "numerator": 120,
+        "denominator": 120,
+        "rate": 1.0
+      },
+      "citation_precision_on_emitted_ids": {
+        "numerator": 89,
+        "denominator": 104,
+        "rate": 0.8557692307692307
+      },
+      "grounded_citation_id_precision": {
+        "numerator": 60,
+        "denominator": 60,
+        "rate": 1.0
+      },
+      "required_citation_recall": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "missing_evidence_clarify_or_abstain": {
+        "numerator": 12,
+        "denominator": 12,
+        "rate": 1.0
+      },
+      "resolvable_conflict_cited_answer": {
+        "numerator": 7,
+        "denominator": 7,
+        "rate": 1.0
+      },
+      "security_denial_no_forbidden_fragment": {
+        "numerator": 11,
+        "denominator": 11,
+        "rate": 1.0
+      },
+      "tool_action_structured_match": {
+        "numerator": 19,
+        "denominator": 19,
+        "rate": 1.0
+      },
+      "latency_ms": {
+        "count": 120,
+        "p50": 73.31,
+        "p95": 87.4945
+      },
+      "first_token_ms": {
+        "count": 0,
+        "p50": null,
+        "p95": null
+      },
+      "tool_success": {
+        "numerator": 19,
+        "denominator": 19,
+        "rate": 1.0
+      },
+      "cost_usd_per_submitted_case": {
+        "count": 120,
+        "mean": 0.0
+      }
+    }
+  },
+  "human_review_completed": false,
+  "release_targets_verified": false,
+  "limitation": "Free-text key-claim support and citation span accuracy require sampled human review; exact structured field matches are only a proxy."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "malformed_order_total",
+    "adapter": "commerce",
+    "kind": "malformed_output",
+    "payload": {
+      "order_id": "ord_ns_demo_001",
+      "total_cents": "forty dollars",
+      "workspace_id": "ws_northstar"
+    },
+    "expected_handling": "reject schema; preserve prior state; surface actionable error"
+  },
+  {
+    "id": "missing_scope_field",
+    "adapter": "commerce",
+    "kind": "malformed_output",
+    "payload": {
+      "order_id": "ord_ns_demo_001",
+      "customer_id": "cust_ns_demo_001"
+    },
+    "expected_handling": "reject unscoped payload before exposing order details"
+  },
+  {
+    "id": "provider_rate_limit",
+    "adapter": "model",
+    "kind": "http_error",
+    "status": 429,
+    "retry_after_seconds": 2,
+    "expected_handling": "bounded retry and user-visible delayed state"
+  },
+  {
+    "id": "external_write_timeout",
+    "adapter": "ticket",
+    "kind": "ambiguous_timeout",
+    "provider_idempotency_key": "demo-ticket-claim-001",
+    "expected_handling": "reconcile provider state before retry; do not claim exactly-once"
+  },
+  {
+    "id": "bad_citation",
+    "adapter": "model",
+    "kind": "malformed_output",
+    "payload": {
+      "answer": "The window is 90 days",
+      "citations": [
+        "not-a-retrieved-span"
+      ]
+    },
+    "expected_handling": "discard unsupported citation and abstain or recompute answer"
+  }
+]

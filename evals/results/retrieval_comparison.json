@@ -1,0 +1,41 @@
+{
+  "database_dialect": "sqlite",
+  "retrieval_implementation": "SQLite lexical plus deterministic local vector approximation",
+  "grounded_cases": 80,
+  "results": {
+    "baseline": {
+      "top1": {
+        "numerator": 69,
+        "denominator": 80,
+        "rate": 0.8625
+      },
+      "top6": {
+        "numerator": 77,
+        "denominator": 80,
+        "rate": 0.9625
+      },
+      "latency_ms": {
+        "median": 10.934349993476644,
+        "p95": 11.515499994857237
+      }
+    },
+    "hybrid": {
+      "top1": {
+        "numerator": 80,
+        "denominator": 80,
+        "rate": 1.0
+      },
+      "top6": {
+        "numerator": 80,
+        "denominator": 80,
+        "rate": 1.0
+      },
+      "latency_ms": {
+        "median": 12.082750006811693,
+        "p95": 12.833500019041821
+      }
+    }
+  },
+  "postgresql_hybrid_verified": false,
+  "note": "Source-version hit rates measure retrieval, not answer support or citation precision."
+}

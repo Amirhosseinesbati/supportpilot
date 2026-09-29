@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "kind": "fixture_integrity_only",
+  "fixture_sha256": "a6afd1e1792956216349b777b468d16a566ad3be19fcc37aec899a4bbc488b48",
+  "cases_sha256": "09a7068bacca523b6e52ed9bc42ed989d835dedcfb6f61138ea555048e9f56fd",
+  "ground_truth_sha256": "a4a186c73ee503533010802b969c90d86f91da2061e2b75b0dce1be47d318447",
+  "seed": 240917,
+  "reference_date": "2026-09-27",
+  "counts": {
+    "workspaces": 2,
+    "products": 120,
+    "customers": 800,
+    "orders": 3000,
+    "documents": 80,
+    "conversations": 400,
+    "proposals": 40
+  },
+  "evaluation_quotas": {
+    "grounded": {
+      "development": 20,
+      "held_out": 60
+    },
+    "insufficient_or_conflicting": {
+      "development": 6,
+      "held_out": 19
+    },
+    "tool_action": {
+      "development": 6,
+      "held_out": 19
+    },
+    "security": {
+      "development": 4,
+      "held_out": 11
+    },
+    "policy_date_edge": {
+      "development": 4,
+      "held_out": 11
+    }
+  },
+  "document_category_count": 10,
+  "order_month_count": 12,
+  "errors": [],
+  "model_quality_measured": false
+}

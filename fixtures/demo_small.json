@@ -1,0 +1,4500 @@
+{
+  "metadata": {
+    "label": "Synthetic demo dataset",
+    "size": "small",
+    "seed": 240917,
+    "reference_date": "2026-09-27",
+    "schema_version": 1,
+    "source": "deterministic subset of full fixture"
+  },
+  "workspaces": [
+    {
+      "id": "ws_northstar",
+      "slug": "northstar",
+      "name": "Northstar Supply",
+      "currency": "USD",
+      "demo": true,
+      "return_policy": {
+        "standard_days": 30,
+        "monitor_days": 21,
+        "late_delivery_grace_days": 45,
+        "late_threshold_days": 7,
+        "exception_requires_review": true,
+        "effective_from": "2026-04-01"
+      },
+      "support_email": "support@northstar.example.test",
+      "reference_date": "2026-09-27"
+    },
+    {
+      "id": "ws_harbor",
+      "slug": "harbor",
+      "name": "Harbor Workroom",
+      "currency": "USD",
+      "demo": true,
+      "return_policy": {
+        "standard_days": 21,
+        "monitor_days": 14,
+        "late_delivery_grace_days": 35,
+        "late_threshold_days": 10,
+        "exception_requires_review": true,
+        "effective_from": "2026-04-01"
+      },
+      "support_email": "support@harbor.example.test",
+      "reference_date": "2026-09-27"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_ns_admin",
+      "workspace_id": "ws_northstar",
+      "customer_id": null,
+      "email": "admin.ns@example.test",
+      "name": "Northstar Admin",
+      "role": "admin",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_operator",
+      "workspace_id": "ws_northstar",
+      "customer_id": null,
+      "email": "operator.ns@example.test",
+      "name": "Northstar Operator",
+      "role": "operator",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_viewer",
+      "workspace_id": "ws_northstar",
+      "customer_id": null,
+      "email": "viewer.ns@example.test",
+      "name": "Northstar Viewer",
+      "role": "viewer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_demo_customer",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_demo_001",
+      "email": "ns.customer.0001@example.test",
+      "name": "Harper Lin",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_02",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0002",
+      "email": "ns.customer.0002@example.test",
+      "name": "Oakley Xu",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_42",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0042",
+      "email": "ns.customer.0042@example.test",
+      "name": "Gray Grant",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_48",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0048",
+      "email": "ns.customer.0048@example.test",
+      "name": "Avery Arden",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_59",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0059",
+      "email": "ns.customer.0059@example.test",
+      "name": "Finley Bell",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_103",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0103",
+      "email": "ns.customer.0103@example.test",
+      "name": "Blair Farah",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_160",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0160",
+      "email": "ns.customer.0160@example.test",
+      "name": "Quinn Ibrahim",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_214",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0214",
+      "email": "ns.customer.0214@example.test",
+      "name": "Kai Chen",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_246",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0246",
+      "email": "ns.customer.0246@example.test",
+      "name": "Sage Torres",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_247",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0247",
+      "email": "ns.customer.0247@example.test",
+      "name": "Blair Farah",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_265",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0265",
+      "email": "ns.customer.0265@example.test",
+      "name": "Harper Lin",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_266",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0266",
+      "email": "ns.customer.0266@example.test",
+      "name": "Oakley Xu",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_275",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0275",
+      "email": "ns.customer.0275@example.test",
+      "name": "Finley Bell",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_282",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0282",
+      "email": "ns.customer.0282@example.test",
+      "name": "Gray Grant",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_335",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0335",
+      "email": "ns.customer.0335@example.test",
+      "name": "Reese Nouri",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_396",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0396",
+      "email": "ns.customer.0396@example.test",
+      "name": "Morgan Morales",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_415",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0415",
+      "email": "ns.customer.0415@example.test",
+      "name": "Blair Farah",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_430",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0430",
+      "email": "ns.customer.0430@example.test",
+      "name": "Kai Chen",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_455",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0455",
+      "email": "ns.customer.0455@example.test",
+      "name": "Reese Nouri",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_460",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0460",
+      "email": "ns.customer.0460@example.test",
+      "name": "Ellis Vega",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_463",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0463",
+      "email": "ns.customer.0463@example.test",
+      "name": "Blair Farah",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_477",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0477",
+      "email": "ns.customer.0477@example.test",
+      "name": "Devon Patel",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_494",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0494",
+      "email": "ns.customer.0494@example.test",
+      "name": "Casey Khan",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_534",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0534",
+      "email": "ns.customer.0534@example.test",
+      "name": "Sage Torres",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_569",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0569",
+      "email": "ns.customer.0569@example.test",
+      "name": "Zion Usman",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_606",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0606",
+      "email": "ns.customer.0606@example.test",
+      "name": "Sage Torres",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_608",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0608",
+      "email": "ns.customer.0608@example.test",
+      "name": "Indigo Reed",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_622",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0622",
+      "email": "ns.customer.0622@example.test",
+      "name": "Kai Chen",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_ns_customer_627",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0627",
+      "email": "ns.customer.0627@example.test",
+      "name": "Val Jensen",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_admin",
+      "workspace_id": "ws_harbor",
+      "customer_id": null,
+      "email": "admin.hb@example.test",
+      "name": "Harbor Admin",
+      "role": "admin",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_operator",
+      "workspace_id": "ws_harbor",
+      "customer_id": null,
+      "email": "operator.hb@example.test",
+      "name": "Harbor Operator",
+      "role": "operator",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_viewer",
+      "workspace_id": "ws_harbor",
+      "customer_id": null,
+      "email": "viewer.hb@example.test",
+      "name": "Harbor Viewer",
+      "role": "viewer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_25",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0025",
+      "email": "hb.customer.0025@example.test",
+      "name": "Morgan Olsen",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_30",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0030",
+      "email": "hb.customer.0030@example.test",
+      "name": "Zion White",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_39",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0039",
+      "email": "hb.customer.0039@example.test",
+      "name": "Oakley Arden",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_52",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0052",
+      "email": "hb.customer.0052@example.test",
+      "name": "Jules Young",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_59",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0059",
+      "email": "hb.customer.0059@example.test",
+      "name": "Kai Everett",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_87",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0087",
+      "email": "hb.customer.0087@example.test",
+      "name": "Oakley Arden",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_95",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0095",
+      "email": "hb.customer.0095@example.test",
+      "name": "Wren Reed",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_101",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0101",
+      "email": "hb.customer.0101@example.test",
+      "name": "Quinn Khan",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_112",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0112",
+      "email": "hb.customer.0112@example.test",
+      "name": "Val Lin",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_113",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0113",
+      "email": "hb.customer.0113@example.test",
+      "name": "Ellis Xu",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_126",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0126",
+      "email": "hb.customer.0126@example.test",
+      "name": "Zion White",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_149",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0149",
+      "email": "hb.customer.0149@example.test",
+      "name": "Quinn Khan",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_151",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0151",
+      "email": "hb.customer.0151@example.test",
+      "name": "Gray Ibrahim",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    },
+    {
+      "id": "user_hb_customer_153",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0153",
+      "email": "hb.customer.0153@example.test",
+      "name": "Uma Grant",
+      "role": "customer",
+      "password": "DemoPass!2026"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_ns_demo_001",
+      "workspace_id": "ws_northstar",
+      "name": "Harper Lin",
+      "email": "ns.customer.0001@example.test",
+      "phone": "+1-555-0101",
+      "created_at": "2024-01-14T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0002",
+      "workspace_id": "ws_northstar",
+      "name": "Oakley Xu",
+      "email": "ns.customer.0002@example.test",
+      "phone": "+1-555-0102",
+      "created_at": "2024-01-27T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0042",
+      "workspace_id": "ws_northstar",
+      "name": "Gray Grant",
+      "email": "ns.customer.0042@example.test",
+      "phone": null,
+      "created_at": "2024-03-07T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0048",
+      "workspace_id": "ws_northstar",
+      "name": "Avery Arden",
+      "email": "ns.customer.0048@example.test",
+      "phone": "+1-555-0148",
+      "created_at": "2024-05-24T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0059",
+      "workspace_id": "ws_northstar",
+      "name": "Finley Bell",
+      "email": "ns.customer.0059@example.test",
+      "phone": "+1-555-0159",
+      "created_at": "2024-10-14T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0103",
+      "workspace_id": "ws_northstar",
+      "name": "Blair Farah",
+      "email": "ns.customer.0103@example.test",
+      "phone": "+1-555-0103",
+      "created_at": "2025-01-14T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0160",
+      "workspace_id": "ws_northstar",
+      "name": "Quinn Ibrahim",
+      "email": "ns.customer.0160@example.test",
+      "phone": "+1-555-0160",
+      "created_at": "2024-06-09T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0214",
+      "workspace_id": "ws_northstar",
+      "name": "Kai Chen",
+      "email": "ns.customer.0214@example.test",
+      "phone": "+1-555-0114",
+      "created_at": "2025-01-17T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0246",
+      "workspace_id": "ws_northstar",
+      "name": "Sage Torres",
+      "email": "ns.customer.0246@example.test",
+      "phone": "+1-555-0146",
+      "created_at": "2024-11-14T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0247",
+      "workspace_id": "ws_northstar",
+      "name": "Blair Farah",
+      "email": "ns.customer.0247@example.test",
+      "phone": "+1-555-0147",
+      "created_at": "2024-11-27T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0265",
+      "workspace_id": "ws_northstar",
+      "name": "Harper Lin",
+      "email": "ns.customer.0265@example.test",
+      "phone": "+1-555-0165",
+      "created_at": "2024-03-26T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0266",
+      "workspace_id": "ws_northstar",
+      "name": "Oakley Xu",
+      "email": "ns.customer.0266@example.test",
+      "phone": null,
+      "created_at": "2024-04-08T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0275",
+      "workspace_id": "ws_northstar",
+      "name": "Finley Bell",
+      "email": "ns.customer.0275@example.test",
+      "phone": "+1-555-0175",
+      "created_at": "2024-08-03T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0282",
+      "workspace_id": "ws_northstar",
+      "name": "Gray Grant",
+      "email": "ns.customer.0282@example.test",
+      "phone": "+1-555-0182",
+      "created_at": "2024-11-02T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0335",
+      "workspace_id": "ws_northstar",
+      "name": "Reese Nouri",
+      "email": "ns.customer.0335@example.test",
+      "phone": "+1-555-0135",
+      "created_at": "2024-02-05T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0396",
+      "workspace_id": "ws_northstar",
+      "name": "Morgan Morales",
+      "email": "ns.customer.0396@example.test",
+      "phone": "+1-555-0196",
+      "created_at": "2024-12-14T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0415",
+      "workspace_id": "ws_northstar",
+      "name": "Blair Farah",
+      "email": "ns.customer.0415@example.test",
+      "phone": "+1-555-0115",
+      "created_at": "2024-04-25T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0430",
+      "workspace_id": "ws_northstar",
+      "name": "Kai Chen",
+      "email": "ns.customer.0430@example.test",
+      "phone": "+1-555-0130",
+      "created_at": "2024-11-06T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0455",
+      "workspace_id": "ws_northstar",
+      "name": "Reese Nouri",
+      "email": "ns.customer.0455@example.test",
+      "phone": null,
+      "created_at": "2024-06-04T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0460",
+      "workspace_id": "ws_northstar",
+      "name": "Ellis Vega",
+      "email": "ns.customer.0460@example.test",
+      "phone": "+1-555-0160",
+      "created_at": "2024-08-08T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0463",
+      "workspace_id": "ws_northstar",
+      "name": "Blair Farah",
+      "email": "ns.customer.0463@example.test",
+      "phone": "+1-555-0163",
+      "created_at": "2024-09-16T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0477",
+      "workspace_id": "ws_northstar",
+      "name": "Devon Patel",
+      "email": "ns.customer.0477@example.test",
+      "phone": "+1-555-0177",
+      "created_at": "2025-03-17T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0494",
+      "workspace_id": "ws_northstar",
+      "name": "Casey Khan",
+      "email": "ns.customer.0494@example.test",
+      "phone": "+1-555-0194",
+      "created_at": "2024-07-01T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0534",
+      "workspace_id": "ws_northstar",
+      "name": "Sage Torres",
+      "email": "ns.customer.0534@example.test",
+      "phone": "+1-555-0134",
+      "created_at": "2024-08-10T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0569",
+      "workspace_id": "ws_northstar",
+      "name": "Zion Usman",
+      "email": "ns.customer.0569@example.test",
+      "phone": "+1-555-0169",
+      "created_at": "2024-07-16T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0606",
+      "workspace_id": "ws_northstar",
+      "name": "Sage Torres",
+      "email": "ns.customer.0606@example.test",
+      "phone": "+1-555-0106",
+      "created_at": "2024-07-17T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0608",
+      "workspace_id": "ws_northstar",
+      "name": "Indigo Reed",
+      "email": "ns.customer.0608@example.test",
+      "phone": "+1-555-0108",
+      "created_at": "2024-08-12T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0622",
+      "workspace_id": "ws_northstar",
+      "name": "Kai Chen",
+      "email": "ns.customer.0622@example.test",
+      "phone": "+1-555-0122",
+      "created_at": "2025-02-10T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_ns_0627",
+      "workspace_id": "ws_northstar",
+      "name": "Val Jensen",
+      "email": "ns.customer.0627@example.test",
+      "phone": "+1-555-0127",
+      "created_at": "2025-04-16T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0025",
+      "workspace_id": "ws_harbor",
+      "name": "Morgan Olsen",
+      "email": "hb.customer.0025@example.test",
+      "phone": "+1-555-0125",
+      "created_at": "2024-11-21T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0030",
+      "workspace_id": "ws_harbor",
+      "name": "Zion White",
+      "email": "hb.customer.0030@example.test",
+      "phone": "+1-555-0130",
+      "created_at": "2025-01-25T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0039",
+      "workspace_id": "ws_harbor",
+      "name": "Oakley Arden",
+      "email": "hb.customer.0039@example.test",
+      "phone": "+1-555-0139",
+      "created_at": "2024-01-28T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0052",
+      "workspace_id": "ws_harbor",
+      "name": "Jules Young",
+      "email": "hb.customer.0052@example.test",
+      "phone": "+1-555-0152",
+      "created_at": "2024-07-15T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0059",
+      "workspace_id": "ws_harbor",
+      "name": "Kai Everett",
+      "email": "hb.customer.0059@example.test",
+      "phone": "+1-555-0159",
+      "created_at": "2024-10-14T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0087",
+      "workspace_id": "ws_harbor",
+      "name": "Oakley Arden",
+      "email": "hb.customer.0087@example.test",
+      "phone": "+1-555-0187",
+      "created_at": "2024-06-20T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0095",
+      "workspace_id": "ws_harbor",
+      "name": "Wren Reed",
+      "email": "hb.customer.0095@example.test",
+      "phone": "+1-555-0195",
+      "created_at": "2024-10-02T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0101",
+      "workspace_id": "ws_harbor",
+      "name": "Quinn Khan",
+      "email": "hb.customer.0101@example.test",
+      "phone": "+1-555-0101",
+      "created_at": "2024-12-19T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0112",
+      "workspace_id": "ws_harbor",
+      "name": "Val Lin",
+      "email": "hb.customer.0112@example.test",
+      "phone": null,
+      "created_at": "2024-01-17T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0113",
+      "workspace_id": "ws_harbor",
+      "name": "Ellis Xu",
+      "email": "hb.customer.0113@example.test",
+      "phone": "+1-555-0113",
+      "created_at": "2024-01-30T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0126",
+      "workspace_id": "ws_harbor",
+      "name": "Zion White",
+      "email": "hb.customer.0126@example.test",
+      "phone": null,
+      "created_at": "2024-07-17T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0149",
+      "workspace_id": "ws_harbor",
+      "name": "Quinn Khan",
+      "email": "hb.customer.0149@example.test",
+      "phone": "+1-555-0149",
+      "created_at": "2024-01-18T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0151",
+      "workspace_id": "ws_harbor",
+      "name": "Gray Ibrahim",
+      "email": "hb.customer.0151@example.test",
+      "phone": "+1-555-0151",
+      "created_at": "2024-02-13T12:00:00+00:00",
+      "locale": "en-US"
+    },
+    {
+      "id": "cust_hb_0153",
+      "workspace_id": "ws_harbor",
+      "name": "Uma Grant",
+      "email": "hb.customer.0153@example.test",
+      "phone": "+1-555-0153",
+      "created_at": "2024-03-10T12:00:00+00:00",
+      "locale": "en-US"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_ns_demo_monitor",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-MON-001",
+      "name": "Aster Display 01",
+      "category": "monitor",
+      "price_cents": 37900,
+      "currency": "USD",
+      "specifications": {
+        "size_in": "27",
+        "resolution": "2560 × 1440",
+        "refresh_hz": "100",
+        "vesa_mm": "100 × 100",
+        "power_w": "33"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_monitor_06",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-MON-006",
+      "name": "Aster Display 06",
+      "category": "monitor",
+      "price_cents": 47400,
+      "currency": "USD",
+      "specifications": {
+        "size_in": "32",
+        "resolution": "3840 × 2160",
+        "refresh_hz": "60",
+        "vesa_mm": "100 × 100",
+        "power_w": "43"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_monitor_01",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-MON-001",
+      "name": "Aster Display 10",
+      "category": "monitor",
+      "price_cents": 55000,
+      "currency": "USD",
+      "specifications": {
+        "size_in": "32",
+        "resolution": "3840 × 2160",
+        "refresh_hz": "60",
+        "vesa_mm": "100 × 100",
+        "power_w": "51"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_monitor_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-MON-002",
+      "name": "Aster Display 11",
+      "category": "monitor",
+      "price_cents": 56900,
+      "currency": "USD",
+      "specifications": {
+        "size_in": "34",
+        "resolution": "3440 × 1440",
+        "refresh_hz": "100",
+        "vesa_mm": "100 × 100",
+        "power_w": "53"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_desk_01",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DES-001",
+      "name": "Beacon Sit-Stand Desk 01",
+      "category": "desk",
+      "price_cents": 69900,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "140",
+        "depth_cm": "70",
+        "height_range_cm": "63–127",
+        "load_kg": "80",
+        "surface": "walnut veneer"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_desk_06",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DES-006",
+      "name": "Beacon Sit-Stand Desk 06",
+      "category": "desk",
+      "price_cents": 79400,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "160",
+        "depth_cm": "75",
+        "height_range_cm": "64–128",
+        "load_kg": "90",
+        "surface": "matte white laminate"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_desk_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DES-007",
+      "name": "Beacon Sit-Stand Desk 07",
+      "category": "desk",
+      "price_cents": 81300,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "180",
+        "depth_cm": "80",
+        "height_range_cm": "65–129",
+        "load_kg": "100",
+        "surface": "ash veneer"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_desk_08",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DES-008",
+      "name": "Beacon Sit-Stand Desk 08",
+      "category": "desk",
+      "price_cents": 83200,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "120",
+        "depth_cm": "60",
+        "height_range_cm": "62–126",
+        "load_kg": "70",
+        "surface": "birch laminate"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_desk_09",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DES-009",
+      "name": "Beacon Sit-Stand Desk 09",
+      "category": "desk",
+      "price_cents": 85100,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "140",
+        "depth_cm": "70",
+        "height_range_cm": "63–127",
+        "load_kg": "80",
+        "surface": "walnut veneer"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_desk_01",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-DES-001",
+      "name": "Beacon Sit-Stand Desk 10",
+      "category": "desk",
+      "price_cents": 87000,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "160",
+        "depth_cm": "75",
+        "height_range_cm": "64–128",
+        "load_kg": "90",
+        "surface": "matte white laminate"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_desk_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-DES-002",
+      "name": "Beacon Sit-Stand Desk 11",
+      "category": "desk",
+      "price_cents": 88900,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "180",
+        "depth_cm": "80",
+        "height_range_cm": "65–129",
+        "load_kg": "100",
+        "surface": "ash veneer"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_chair_01",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-CHA-001",
+      "name": "Cedar Task Chair 01",
+      "category": "chair",
+      "price_cents": 48900,
+      "currency": "USD",
+      "specifications": {
+        "seat_height_cm": "42–53",
+        "load_kg": "120",
+        "armrests": "2D adjustable",
+        "back": "woven fabric"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_chair_03",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-CHA-003",
+      "name": "Cedar Task Chair 03",
+      "category": "chair",
+      "price_cents": 52700,
+      "currency": "USD",
+      "specifications": {
+        "seat_height_cm": "44–55",
+        "load_kg": "140",
+        "armrests": "4D adjustable",
+        "back": "recycled knit"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_chair_06",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-CHA-006",
+      "name": "Cedar Task Chair 06",
+      "category": "chair",
+      "price_cents": 58400,
+      "currency": "USD",
+      "specifications": {
+        "seat_height_cm": "43–54",
+        "load_kg": "130",
+        "armrests": "3D adjustable",
+        "back": "mesh"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_chair_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-CHA-007",
+      "name": "Cedar Task Chair 07",
+      "category": "chair",
+      "price_cents": 60300,
+      "currency": "USD",
+      "specifications": {
+        "seat_height_cm": "44–55",
+        "load_kg": "140",
+        "armrests": "4D adjustable",
+        "back": "recycled knit"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_chair_09",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-CHA-009",
+      "name": "Cedar Task Chair 09",
+      "category": "chair",
+      "price_cents": 64100,
+      "currency": "USD",
+      "specifications": {
+        "seat_height_cm": "42–53",
+        "load_kg": "120",
+        "armrests": "2D adjustable",
+        "back": "woven fabric"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_chair_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-CHA-002",
+      "name": "Cedar Task Chair 11",
+      "category": "chair",
+      "price_cents": 67900,
+      "currency": "USD",
+      "specifications": {
+        "seat_height_cm": "44–55",
+        "load_kg": "140",
+        "armrests": "4D adjustable",
+        "back": "recycled knit"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_lamp_08",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-LAM-008",
+      "name": "Drift Task Lamp 08",
+      "category": "lamp",
+      "price_cents": 17800,
+      "currency": "USD",
+      "specifications": {
+        "brightness_lm": "830",
+        "color_temperature_k": "2700–5000",
+        "power_w": "7",
+        "clamp_max_mm": "45"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_lamp_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-LAM-002",
+      "name": "Drift Task Lamp 11",
+      "category": "lamp",
+      "price_cents": 19900,
+      "currency": "USD",
+      "specifications": {
+        "brightness_lm": "935",
+        "color_temperature_k": "2700–5000",
+        "power_w": "10",
+        "clamp_max_mm": "60"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_lamp_03",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-LAM-003",
+      "name": "Drift Task Lamp 12",
+      "category": "lamp",
+      "price_cents": 20600,
+      "currency": "USD",
+      "specifications": {
+        "brightness_lm": "970",
+        "color_temperature_k": "2700–5000",
+        "power_w": "7",
+        "clamp_max_mm": "45"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_arm_03",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ARM-003",
+      "name": "Ember Monitor Arm 03",
+      "category": "arm",
+      "price_cents": 19300,
+      "currency": "USD",
+      "specifications": {
+        "screen_size_in": "17–38",
+        "load_kg": "2–11",
+        "vesa_mm": "75 × 75; 100 × 100",
+        "clamp_max_mm": "70"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_arm_04",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ARM-004",
+      "name": "Ember Monitor Arm 04",
+      "category": "arm",
+      "price_cents": 20000,
+      "currency": "USD",
+      "specifications": {
+        "screen_size_in": "17–32",
+        "load_kg": "2–8",
+        "vesa_mm": "75 × 75; 100 × 100",
+        "clamp_max_mm": "55"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_arm_06",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ARM-006",
+      "name": "Ember Monitor Arm 06",
+      "category": "arm",
+      "price_cents": 21400,
+      "currency": "USD",
+      "specifications": {
+        "screen_size_in": "17–36",
+        "load_kg": "2–10",
+        "vesa_mm": "75 × 75; 100 × 100",
+        "clamp_max_mm": "65"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_arm_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ARM-007",
+      "name": "Ember Monitor Arm 07",
+      "category": "arm",
+      "price_cents": 22100,
+      "currency": "USD",
+      "specifications": {
+        "screen_size_in": "17–38",
+        "load_kg": "2–11",
+        "vesa_mm": "75 × 75; 100 × 100",
+        "clamp_max_mm": "70"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_arm_08",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ARM-008",
+      "name": "Ember Monitor Arm 08",
+      "category": "arm",
+      "price_cents": 22800,
+      "currency": "USD",
+      "specifications": {
+        "screen_size_in": "17–32",
+        "load_kg": "2–8",
+        "vesa_mm": "75 × 75; 100 × 100",
+        "clamp_max_mm": "55"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_keyboard_01",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-KEY-001",
+      "name": "Field Keyboard 01",
+      "category": "keyboard",
+      "price_cents": 14900,
+      "currency": "USD",
+      "specifications": {
+        "layout": "UK ISO",
+        "connection": "Bluetooth/USB-C",
+        "battery_hours": "88"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_keyboard_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-KEY-007",
+      "name": "Field Keyboard 07",
+      "category": "keyboard",
+      "price_cents": 19100,
+      "currency": "USD",
+      "specifications": {
+        "layout": "compact US ANSI",
+        "connection": "Bluetooth/USB-C",
+        "battery_hours": "136"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_dock_04",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DOC-004",
+      "name": "Grove USB-C Dock 04",
+      "category": "dock",
+      "price_cents": 30600,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "single 4K 60 Hz",
+        "power_delivery_w": "65",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_dock_05",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DOC-005",
+      "name": "Grove USB-C Dock 05",
+      "category": "dock",
+      "price_cents": 32500,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "dual 4K 30 Hz",
+        "power_delivery_w": "85",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_dock_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DOC-007",
+      "name": "Grove USB-C Dock 07",
+      "category": "dock",
+      "price_cents": 36300,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "single 5K 60 Hz",
+        "power_delivery_w": "100",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_dock_08",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-DOC-008",
+      "name": "Grove USB-C Dock 08",
+      "category": "dock",
+      "price_cents": 38200,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "single 4K 60 Hz",
+        "power_delivery_w": "65",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_dock_01",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-DOC-001",
+      "name": "Grove USB-C Dock 10",
+      "category": "dock",
+      "price_cents": 42000,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "dual 4K 60 Hz",
+        "power_delivery_w": "100",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_dock_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-DOC-002",
+      "name": "Grove USB-C Dock 11",
+      "category": "dock",
+      "price_cents": 43900,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "single 5K 60 Hz",
+        "power_delivery_w": "100",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_dock_03",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-DOC-003",
+      "name": "Grove USB-C Dock 12",
+      "category": "dock",
+      "price_cents": 45800,
+      "currency": "USD",
+      "specifications": {
+        "host_port": "USB-C",
+        "display_output": "single 4K 60 Hz",
+        "power_delivery_w": "65",
+        "ethernet": "1 Gb/s"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_storage_02",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-STO-002",
+      "name": "Horizon Desk Storage 02",
+      "category": "storage",
+      "price_cents": 9600,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "40",
+        "depth_cm": "24",
+        "material": "recycled felt",
+        "max_load_kg": "12"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_storage_04",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-STO-004",
+      "name": "Horizon Desk Storage 04",
+      "category": "storage",
+      "price_cents": 11000,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "28",
+        "depth_cm": "18",
+        "material": "powder-coated steel",
+        "max_load_kg": "8"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_storage_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-STO-007",
+      "name": "Horizon Desk Storage 07",
+      "category": "storage",
+      "price_cents": 13100,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "46",
+        "depth_cm": "27",
+        "material": "solid ash",
+        "max_load_kg": "14"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_storage_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-STO-002",
+      "name": "Horizon Desk Storage 11",
+      "category": "storage",
+      "price_cents": 15900,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "46",
+        "depth_cm": "27",
+        "material": "solid ash",
+        "max_load_kg": "14"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_storage_03",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-STO-003",
+      "name": "Horizon Desk Storage 12",
+      "category": "storage",
+      "price_cents": 16600,
+      "currency": "USD",
+      "specifications": {
+        "width_cm": "28",
+        "depth_cm": "18",
+        "material": "powder-coated steel",
+        "max_load_kg": "8"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_acoustic_05",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ACO-005",
+      "name": "Iris Acoustic Panel 05",
+      "category": "acoustic",
+      "price_cents": 29500,
+      "currency": "USD",
+      "specifications": {
+        "size_cm": "60 × 120",
+        "thickness_mm": "25",
+        "material": "recycled PET felt",
+        "mounting": "wall screws"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_acoustic_06",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ACO-006",
+      "name": "Iris Acoustic Panel 06",
+      "category": "acoustic",
+      "price_cents": 31400,
+      "currency": "USD",
+      "specifications": {
+        "size_cm": "80 × 120",
+        "thickness_mm": "30",
+        "material": "recycled PET felt",
+        "mounting": "desk clamp"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_acoustic_07",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ACO-007",
+      "name": "Iris Acoustic Panel 07",
+      "category": "acoustic",
+      "price_cents": 33300,
+      "currency": "USD",
+      "specifications": {
+        "size_cm": "100 × 120",
+        "thickness_mm": "35",
+        "material": "recycled PET felt",
+        "mounting": "wall screws"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_acoustic_09",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ACO-009",
+      "name": "Iris Acoustic Panel 09",
+      "category": "acoustic",
+      "price_cents": 37100,
+      "currency": "USD",
+      "specifications": {
+        "size_cm": "60 × 120",
+        "thickness_mm": "25",
+        "material": "recycled PET felt",
+        "mounting": "wall screws"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_acoustic_01",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-ACO-001",
+      "name": "Iris Acoustic Panel 10",
+      "category": "acoustic",
+      "price_cents": 39000,
+      "currency": "USD",
+      "specifications": {
+        "size_cm": "80 × 120",
+        "thickness_mm": "30",
+        "material": "recycled PET felt",
+        "mounting": "desk clamp"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_acoustic_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-ACO-002",
+      "name": "Iris Acoustic Panel 11",
+      "category": "acoustic",
+      "price_cents": 40900,
+      "currency": "USD",
+      "specifications": {
+        "size_cm": "100 × 120",
+        "thickness_mm": "35",
+        "material": "recycled PET felt",
+        "mounting": "wall screws"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_accessory_03",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ACC-003",
+      "name": "Juniper Desk Accessory 03",
+      "category": "accessory",
+      "price_cents": 6300,
+      "currency": "USD",
+      "specifications": {
+        "length_cm": "40",
+        "material": "silicone",
+        "finish": "navy"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_ns_accessory_09",
+      "workspace_id": "ws_northstar",
+      "sku": "NS-ACC-009",
+      "name": "Juniper Desk Accessory 09",
+      "category": "accessory",
+      "price_cents": 10500,
+      "currency": "USD",
+      "specifications": {
+        "length_cm": "30",
+        "material": "bamboo",
+        "finish": "natural"
+      },
+      "active": true
+    },
+    {
+      "id": "prod_hb_accessory_02",
+      "workspace_id": "ws_harbor",
+      "sku": "HB-ACC-002",
+      "name": "Juniper Desk Accessory 11",
+      "category": "accessory",
+      "price_cents": 11900,
+      "currency": "USD",
+      "specifications": {
+        "length_cm": "40",
+        "material": "silicone",
+        "finish": "navy"
+      },
+      "active": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_ns_demo_001",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_demo_001",
+      "number": "NS-000001",
+      "placed_at": "2026-08-01T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 37900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_demo_001",
+          "product_id": "prod_ns_demo_monitor",
+          "quantity": 1,
+          "unit_price_cents": 37900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00001",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000001",
+          "shipped_at": "2026-08-10T16:00:00+00:00",
+          "delivered_at": "2026-08-26T17:00:00+00:00",
+          "promised_delivery_at": "2026-08-14T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00002",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0247",
+      "number": "NS-000002",
+      "placed_at": "2026-03-03T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 14900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00002_1",
+          "product_id": "prod_ns_keyboard_01",
+          "quantity": 1,
+          "unit_price_cents": 14900,
+          "returned_quantity": 1
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00002",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000002",
+          "shipped_at": "2026-03-06T16:00:00+00:00",
+          "delivered_at": "2026-03-13T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-10T17:00:00+00:00"
+        }
+      ],
+      "returns": [
+        {
+          "id": "return_ns_00002_1",
+          "line_id": "line_ns_00002_1",
+          "quantity": 1,
+          "status": "recorded",
+          "created_at": "2026-03-28T11:00:00+00:00",
+          "reason": "wrong_fit"
+        }
+      ]
+    },
+    {
+      "id": "ord_ns_00003",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0415",
+      "number": "NS-000003",
+      "placed_at": "2026-04-16T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 64100,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00003_1",
+          "product_id": "prod_ns_chair_09",
+          "quantity": 1,
+          "unit_price_cents": 64100,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00003",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0000003",
+          "shipped_at": "2026-04-19T16:00:00+00:00",
+          "delivered_at": "2026-04-23T17:00:00+00:00",
+          "promised_delivery_at": "2026-04-23T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00004",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0396",
+      "number": "NS-000004",
+      "placed_at": "2026-03-14T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 11000,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00004_1",
+          "product_id": "prod_ns_storage_04",
+          "quantity": 1,
+          "unit_price_cents": 11000,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00004",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000004",
+          "shipped_at": "2026-03-17T16:00:00+00:00",
+          "delivered_at": "2026-03-24T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-21T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00005",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0463",
+      "number": "NS-000005",
+      "placed_at": "2026-08-25T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 47400,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00005_1",
+          "product_id": "prod_ns_monitor_06",
+          "quantity": 1,
+          "unit_price_cents": 47400,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00005",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000005",
+          "shipped_at": "2026-08-27T16:00:00+00:00",
+          "delivered_at": "2026-09-01T17:00:00+00:00",
+          "promised_delivery_at": "2026-09-01T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00006",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0477",
+      "number": "NS-000006",
+      "placed_at": "2026-09-04T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 22800,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00006_1",
+          "product_id": "prod_ns_arm_08",
+          "quantity": 1,
+          "unit_price_cents": 22800,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00006",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0000006",
+          "shipped_at": "2026-09-05T16:00:00+00:00",
+          "delivered_at": "2026-09-12T17:00:00+00:00",
+          "promised_delivery_at": "2026-09-11T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00007",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0494",
+      "number": "NS-000007",
+      "placed_at": "2026-02-09T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 65000,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00007_1",
+          "product_id": "prod_ns_dock_05",
+          "quantity": 2,
+          "unit_price_cents": 32500,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00007",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000007",
+          "shipped_at": "2026-02-10T16:00:00+00:00",
+          "delivered_at": "2026-02-13T17:00:00+00:00",
+          "promised_delivery_at": "2026-02-16T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00008",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0275",
+      "number": "NS-000008",
+      "placed_at": "2026-01-27T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 36300,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00008_1",
+          "product_id": "prod_ns_dock_07",
+          "quantity": 1,
+          "unit_price_cents": 36300,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00008",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000008",
+          "shipped_at": "2026-01-29T16:00:00+00:00",
+          "delivered_at": "2026-02-02T17:00:00+00:00",
+          "promised_delivery_at": "2026-02-03T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00009",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0059",
+      "number": "NS-000009",
+      "placed_at": "2026-05-13T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 19300,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00009_1",
+          "product_id": "prod_ns_arm_03",
+          "quantity": 1,
+          "unit_price_cents": 19300,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00009",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0000009",
+          "shipped_at": "2026-05-15T16:00:00+00:00",
+          "delivered_at": "2026-05-19T17:00:00+00:00",
+          "promised_delivery_at": "2026-05-20T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00010",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0534",
+      "number": "NS-000010",
+      "placed_at": "2026-08-09T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 9600,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00010_1",
+          "product_id": "prod_ns_storage_02",
+          "quantity": 1,
+          "unit_price_cents": 9600,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00010",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000010",
+          "shipped_at": "2026-08-10T16:00:00+00:00",
+          "delivered_at": "2026-08-14T17:00:00+00:00",
+          "promised_delivery_at": "2026-08-16T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00011",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0335",
+      "number": "NS-000011",
+      "placed_at": "2025-10-09T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 83200,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00011_1",
+          "product_id": "prod_ns_desk_08",
+          "quantity": 1,
+          "unit_price_cents": 83200,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00011",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000011",
+          "shipped_at": "2025-10-11T16:00:00+00:00",
+          "delivered_at": "2025-10-15T17:00:00+00:00",
+          "promised_delivery_at": "2025-10-16T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00012",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0214",
+      "number": "NS-000012",
+      "placed_at": "2026-03-31T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 66600,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00012_1",
+          "product_id": "prod_ns_acoustic_07",
+          "quantity": 2,
+          "unit_price_cents": 33300,
+          "returned_quantity": 1
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00012",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0000012",
+          "shipped_at": "2026-04-01T16:00:00+00:00",
+          "delivered_at": "2026-04-04T17:00:00+00:00",
+          "promised_delivery_at": "2026-04-07T17:00:00+00:00"
+        }
+      ],
+      "returns": [
+        {
+          "id": "return_ns_00012_1",
+          "line_id": "line_ns_00012_1",
+          "quantity": 1,
+          "status": "recorded",
+          "created_at": "2026-04-19T11:00:00+00:00",
+          "reason": "wrong_fit"
+        }
+      ]
+    },
+    {
+      "id": "ord_ns_00013",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0608",
+      "number": "NS-000013",
+      "placed_at": "2026-04-17T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 80400,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00013_1",
+          "product_id": "prod_ns_desk_01",
+          "quantity": 1,
+          "unit_price_cents": 69900,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_00013_2",
+          "product_id": "prod_ns_accessory_09",
+          "quantity": 1,
+          "unit_price_cents": 10500,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00013",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000013",
+          "shipped_at": "2026-04-20T16:00:00+00:00",
+          "delivered_at": "2026-04-25T17:00:00+00:00",
+          "promised_delivery_at": "2026-04-24T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00014",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0103",
+      "number": "NS-000014",
+      "placed_at": "2026-03-13T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 94200,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00014_1",
+          "product_id": "prod_ns_acoustic_06",
+          "quantity": 3,
+          "unit_price_cents": 31400,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00014",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000014",
+          "shipped_at": "2026-03-16T16:00:00+00:00",
+          "delivered_at": "2026-03-21T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-20T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00015",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0460",
+      "number": "NS-000015",
+      "placed_at": "2026-05-04T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 97800,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00015_1",
+          "product_id": "prod_ns_arm_06",
+          "quantity": 1,
+          "unit_price_cents": 21400,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_00015_2",
+          "product_id": "prod_ns_dock_08",
+          "quantity": 2,
+          "unit_price_cents": 38200,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00015",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0000015",
+          "shipped_at": "2026-05-07T16:00:00+00:00",
+          "delivered_at": "2026-05-17T17:00:00+00:00",
+          "promised_delivery_at": "2026-05-11T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00016",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0160",
+      "number": "NS-000016",
+      "placed_at": "2026-09-21T10:00:00+00:00",
+      "status": "in_transit",
+      "total_cents": 44200,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00016_1",
+          "product_id": "prod_ns_arm_07",
+          "quantity": 2,
+          "unit_price_cents": 22100,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00016",
+          "status": "in_transit",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000016",
+          "shipped_at": "2026-09-22T16:00:00+00:00",
+          "delivered_at": null,
+          "promised_delivery_at": "2026-09-28T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00017",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0430",
+      "number": "NS-000017",
+      "placed_at": "2025-11-04T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 151600,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00017_1",
+          "product_id": "prod_ns_desk_07",
+          "quantity": 1,
+          "unit_price_cents": 81300,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_00017_2",
+          "product_id": "prod_ns_arm_06",
+          "quantity": 1,
+          "unit_price_cents": 21400,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_00017_3",
+          "product_id": "prod_ns_chair_01",
+          "quantity": 1,
+          "unit_price_cents": 48900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00017",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000017",
+          "shipped_at": "2025-11-05T16:00:00+00:00",
+          "delivered_at": "2025-11-08T17:00:00+00:00",
+          "promised_delivery_at": "2025-11-11T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00018",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0627",
+      "number": "NS-000018",
+      "placed_at": "2026-02-16T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 9600,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00018_1",
+          "product_id": "prod_ns_storage_02",
+          "quantity": 1,
+          "unit_price_cents": 9600,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00018",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0000018",
+          "shipped_at": "2026-02-18T16:00:00+00:00",
+          "delivered_at": "2026-02-22T17:00:00+00:00",
+          "promised_delivery_at": "2026-02-23T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00019",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0606",
+      "number": "NS-000019",
+      "placed_at": "2026-03-08T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 60300,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00019_1",
+          "product_id": "prod_ns_chair_07",
+          "quantity": 1,
+          "unit_price_cents": 60300,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00019",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000019",
+          "shipped_at": "2026-03-09T16:00:00+00:00",
+          "delivered_at": "2026-03-19T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-15T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00020",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0042",
+      "number": "NS-000020",
+      "placed_at": "2025-10-08T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 38200,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00020_1",
+          "product_id": "prod_ns_keyboard_07",
+          "quantity": 2,
+          "unit_price_cents": 19100,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00020",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0000020",
+          "shipped_at": "2025-10-10T16:00:00+00:00",
+          "delivered_at": "2025-10-15T17:00:00+00:00",
+          "promised_delivery_at": "2025-10-15T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00745",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0569",
+      "number": "NS-000745",
+      "placed_at": "2025-10-05T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 105100,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00745_1",
+          "product_id": "prod_ns_arm_04",
+          "quantity": 1,
+          "unit_price_cents": 20000,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_00745_2",
+          "product_id": "prod_ns_desk_09",
+          "quantity": 1,
+          "unit_price_cents": 85100,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00745",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000745",
+          "shipped_at": "2025-10-07T16:00:00+00:00",
+          "delivered_at": "2025-10-12T17:00:00+00:00",
+          "promised_delivery_at": "2025-10-12T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_00931",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0455",
+      "number": "NS-000931",
+      "placed_at": "2026-04-05T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 58400,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_00931_1",
+          "product_id": "prod_ns_chair_06",
+          "quantity": 1,
+          "unit_price_cents": 58400,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_00931",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0000931",
+          "shipped_at": "2026-04-08T16:00:00+00:00",
+          "delivered_at": "2026-04-12T17:00:00+00:00",
+          "promised_delivery_at": "2026-04-12T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_01214",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0002",
+      "number": "NS-001214",
+      "placed_at": "2026-02-08T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 30600,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_01214_1",
+          "product_id": "prod_ns_dock_04",
+          "quantity": 1,
+          "unit_price_cents": 30600,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_01214",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0001214",
+          "shipped_at": "2026-02-11T16:00:00+00:00",
+          "delivered_at": "2026-02-16T17:00:00+00:00",
+          "promised_delivery_at": "2026-02-15T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_01278",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0048",
+      "number": "NS-001278",
+      "placed_at": "2026-08-28T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 6300,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_01278_1",
+          "product_id": "prod_ns_accessory_03",
+          "quantity": 1,
+          "unit_price_cents": 6300,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_01278",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0001278",
+          "shipped_at": "2026-08-31T16:00:00+00:00",
+          "delivered_at": "2026-09-04T17:00:00+00:00",
+          "promised_delivery_at": "2026-09-04T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_01286",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0282",
+      "number": "NS-001286",
+      "placed_at": "2026-01-27T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 32500,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_01286_1",
+          "product_id": "prod_ns_dock_05",
+          "quantity": 1,
+          "unit_price_cents": 32500,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_01286",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0001286",
+          "shipped_at": "2026-01-28T16:00:00+00:00",
+          "delivered_at": "2026-01-31T17:00:00+00:00",
+          "promised_delivery_at": "2026-02-03T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_01918",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0622",
+      "number": "NS-001918",
+      "placed_at": "2025-10-05T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 128300,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_01918_1",
+          "product_id": "prod_ns_chair_01",
+          "quantity": 1,
+          "unit_price_cents": 48900,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_01918_2",
+          "product_id": "prod_ns_desk_06",
+          "quantity": 1,
+          "unit_price_cents": 79400,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_01918",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "NS-TEST-0001918",
+          "shipped_at": "2025-10-06T16:00:00+00:00",
+          "delivered_at": "2025-10-13T17:00:00+00:00",
+          "promised_delivery_at": "2025-10-12T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_02280",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0265",
+      "number": "NS-002280",
+      "placed_at": "2026-03-05T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 30900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_02280_1",
+          "product_id": "prod_ns_lamp_08",
+          "quantity": 1,
+          "unit_price_cents": 17800,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_02280_2",
+          "product_id": "prod_ns_storage_07",
+          "quantity": 1,
+          "unit_price_cents": 13100,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_02280",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "NS-TEST-0002280",
+          "shipped_at": "2026-03-06T16:00:00+00:00",
+          "delivered_at": "2026-03-13T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-12T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_02321",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0266",
+      "number": "NS-002321",
+      "placed_at": "2026-02-26T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 89800,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_02321_1",
+          "product_id": "prod_ns_chair_03",
+          "quantity": 1,
+          "unit_price_cents": 52700,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_ns_02321_2",
+          "product_id": "prod_ns_acoustic_09",
+          "quantity": 1,
+          "unit_price_cents": 37100,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_02321",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0002321",
+          "shipped_at": "2026-03-01T16:00:00+00:00",
+          "delivered_at": "2026-03-04T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-05T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_ns_02333",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0246",
+      "number": "NS-002333",
+      "placed_at": "2026-09-06T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 59000,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_ns_02333_1",
+          "product_id": "prod_ns_acoustic_05",
+          "quantity": 2,
+          "unit_price_cents": 29500,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_ns_02333",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "NS-TEST-0002333",
+          "shipped_at": "2026-09-08T16:00:00+00:00",
+          "delivered_at": "2026-09-11T17:00:00+00:00",
+          "promised_delivery_at": "2026-09-13T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00001",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0052",
+      "number": "HB-000001",
+      "placed_at": "2026-04-25T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 19900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00001_1",
+          "product_id": "prod_hb_lamp_02",
+          "quantity": 1,
+          "unit_price_cents": 19900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00001",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "HB-TEST-0000001",
+          "shipped_at": "2026-04-26T16:00:00+00:00",
+          "delivered_at": "2026-05-03T17:00:00+00:00",
+          "promised_delivery_at": "2026-05-02T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00002",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0113",
+      "number": "HB-000002",
+      "placed_at": "2026-04-30T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 177800,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00002_1",
+          "product_id": "prod_hb_desk_02",
+          "quantity": 2,
+          "unit_price_cents": 88900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00002",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "HB-TEST-0000002",
+          "shipped_at": "2026-05-02T16:00:00+00:00",
+          "delivered_at": "2026-05-05T17:00:00+00:00",
+          "promised_delivery_at": "2026-05-07T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00003",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0101",
+      "number": "HB-000003",
+      "placed_at": "2026-01-06T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 176700,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00003_1",
+          "product_id": "prod_hb_desk_01",
+          "quantity": 1,
+          "unit_price_cents": 87000,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_hb_00003_2",
+          "product_id": "prod_hb_dock_03",
+          "quantity": 1,
+          "unit_price_cents": 45800,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_hb_00003_3",
+          "product_id": "prod_hb_dock_02",
+          "quantity": 1,
+          "unit_price_cents": 43900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00003",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "HB-TEST-0000003",
+          "shipped_at": "2026-01-09T16:00:00+00:00",
+          "delivered_at": "2026-01-11T17:00:00+00:00",
+          "promised_delivery_at": "2026-01-13T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00004",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0149",
+      "number": "HB-000004",
+      "placed_at": "2026-08-10T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 109900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00004_1",
+          "product_id": "prod_hb_chair_02",
+          "quantity": 1,
+          "unit_price_cents": 67900,
+          "returned_quantity": 1
+        },
+        {
+          "id": "line_hb_00004_2",
+          "product_id": "prod_hb_dock_01",
+          "quantity": 1,
+          "unit_price_cents": 42000,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00004",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "HB-TEST-0000004",
+          "shipped_at": "2026-08-13T16:00:00+00:00",
+          "delivered_at": "2026-08-27T17:00:00+00:00",
+          "promised_delivery_at": "2026-08-17T17:00:00+00:00"
+        }
+      ],
+      "returns": [
+        {
+          "id": "return_from_proposal_hb_005",
+          "line_id": "line_hb_00004_1",
+          "quantity": 1,
+          "status": "recorded",
+          "created_at": "2026-09-19T11:00:00+00:00",
+          "reason": "changed_mind",
+          "proposal_id": "proposal_hb_005"
+        }
+      ]
+    },
+    {
+      "id": "ord_hb_00005",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0039",
+      "number": "HB-000005",
+      "placed_at": "2026-08-16T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 19900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00005_1",
+          "product_id": "prod_hb_lamp_02",
+          "quantity": 1,
+          "unit_price_cents": 19900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00005",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "HB-TEST-0000005",
+          "shipped_at": "2026-08-17T16:00:00+00:00",
+          "delivered_at": "2026-08-22T17:00:00+00:00",
+          "promised_delivery_at": "2026-08-23T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00006",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0059",
+      "number": "HB-000006",
+      "placed_at": "2026-03-13T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 15900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00006_1",
+          "product_id": "prod_hb_storage_02",
+          "quantity": 1,
+          "unit_price_cents": 15900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00006",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "HB-TEST-0000006",
+          "shipped_at": "2026-03-14T16:00:00+00:00",
+          "delivered_at": "2026-03-17T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-20T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00007",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0025",
+      "number": "HB-000007",
+      "placed_at": "2026-01-31T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 56900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00007_1",
+          "product_id": "prod_hb_monitor_02",
+          "quantity": 1,
+          "unit_price_cents": 56900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00007",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "HB-TEST-0000007",
+          "shipped_at": "2026-02-01T16:00:00+00:00",
+          "delivered_at": "2026-02-05T17:00:00+00:00",
+          "promised_delivery_at": "2026-02-07T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00008",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0095",
+      "number": "HB-000008",
+      "placed_at": "2026-01-08T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 15900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00008_1",
+          "product_id": "prod_hb_storage_02",
+          "quantity": 1,
+          "unit_price_cents": 15900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00008",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "HB-TEST-0000008",
+          "shipped_at": "2026-01-09T16:00:00+00:00",
+          "delivered_at": "2026-01-13T17:00:00+00:00",
+          "promised_delivery_at": "2026-01-15T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00009",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0112",
+      "number": "HB-000009",
+      "placed_at": "2025-10-05T10:00:00+00:00",
+      "status": "cancelled",
+      "total_cents": 39000,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00009_1",
+          "product_id": "prod_hb_acoustic_01",
+          "quantity": 1,
+          "unit_price_cents": 39000,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00009",
+          "status": "cancelled",
+          "carrier": null,
+          "tracking_code": null,
+          "shipped_at": null,
+          "delivered_at": null,
+          "promised_delivery_at": "2025-10-12T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00010",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0095",
+      "number": "HB-000010",
+      "placed_at": "2025-12-10T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 42000,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00010_1",
+          "product_id": "prod_hb_dock_01",
+          "quantity": 1,
+          "unit_price_cents": 42000,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00010",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "HB-TEST-0000010",
+          "shipped_at": "2025-12-11T16:00:00+00:00",
+          "delivered_at": "2025-12-25T17:00:00+00:00",
+          "promised_delivery_at": "2025-12-17T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00170",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0126",
+      "number": "HB-000170",
+      "placed_at": "2026-03-03T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 43900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00170_1",
+          "product_id": "prod_hb_dock_02",
+          "quantity": 1,
+          "unit_price_cents": 43900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00170",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "HB-TEST-0000170",
+          "shipped_at": "2026-03-04T16:00:00+00:00",
+          "delivered_at": "2026-03-06T17:00:00+00:00",
+          "promised_delivery_at": "2026-03-10T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00288",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0151",
+      "number": "HB-000288",
+      "placed_at": "2026-08-03T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 40900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00288_1",
+          "product_id": "prod_hb_acoustic_02",
+          "quantity": 1,
+          "unit_price_cents": 40900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00288",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "HB-TEST-0000288",
+          "shipped_at": "2026-08-04T16:00:00+00:00",
+          "delivered_at": "2026-08-07T17:00:00+00:00",
+          "promised_delivery_at": "2026-08-10T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00355",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0030",
+      "number": "HB-000355",
+      "placed_at": "2026-09-08T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 119500,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00355_1",
+          "product_id": "prod_hb_accessory_02",
+          "quantity": 1,
+          "unit_price_cents": 11900,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_hb_00355_2",
+          "product_id": "prod_hb_desk_01",
+          "quantity": 1,
+          "unit_price_cents": 87000,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_hb_00355_3",
+          "product_id": "prod_hb_lamp_03",
+          "quantity": 1,
+          "unit_price_cents": 20600,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00355",
+          "status": "delivered",
+          "carrier": "Blue Route Test",
+          "tracking_code": "HB-TEST-0000355",
+          "shipped_at": "2026-09-10T16:00:00+00:00",
+          "delivered_at": "2026-09-15T17:00:00+00:00",
+          "promised_delivery_at": "2026-09-15T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00374",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0087",
+      "number": "HB-000374",
+      "placed_at": "2026-07-27T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 11900,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00374_1",
+          "product_id": "prod_hb_accessory_02",
+          "quantity": 1,
+          "unit_price_cents": 11900,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00374",
+          "status": "delivered",
+          "carrier": "Union Courier Test",
+          "tracking_code": "HB-TEST-0000374",
+          "shipped_at": "2026-07-30T16:00:00+00:00",
+          "delivered_at": "2026-08-02T17:00:00+00:00",
+          "promised_delivery_at": "2026-08-03T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    },
+    {
+      "id": "ord_hb_00585",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0153",
+      "number": "HB-000585",
+      "placed_at": "2025-11-25T10:00:00+00:00",
+      "status": "delivered",
+      "total_cents": 71600,
+      "currency": "USD",
+      "lines": [
+        {
+          "id": "line_hb_00585_1",
+          "product_id": "prod_hb_monitor_01",
+          "quantity": 1,
+          "unit_price_cents": 55000,
+          "returned_quantity": 0
+        },
+        {
+          "id": "line_hb_00585_2",
+          "product_id": "prod_hb_storage_03",
+          "quantity": 1,
+          "unit_price_cents": 16600,
+          "returned_quantity": 0
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_hb_00585",
+          "status": "delivered",
+          "carrier": "Parcel North Test",
+          "tracking_code": "HB-TEST-0000585",
+          "shipped_at": "2025-11-28T16:00:00+00:00",
+          "delivered_at": "2025-12-03T17:00:00+00:00",
+          "promised_delivery_at": "2025-12-02T17:00:00+00:00"
+        }
+      ],
+      "returns": []
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_ns_policy_shipping",
+      "workspace_id": "ws_northstar",
+      "title": "Shipping policy",
+      "kind": "pdf",
+      "category": "shipping",
+      "status": "published",
+      "authority": "official_policy",
+      "current_version": 2,
+      "versions": [
+        {
+          "id": "doc_ns_policy_shipping_v1",
+          "version": 1,
+          "content": "# Delivery service and delay handling\n\nNorthstar Supply sends a tracking link after the carrier accepts the parcel. The promised delivery date on the order confirmation is an estimate; a tracking scan is not proof of delivery. If the final delivered scan is 10 or more calendar days after the promised date, support records a late-delivery flag. An in-transit order cannot be returned because no item has been received. Check the latest carrier event, then offer an operator ticket when tracking has not moved for five business days. For split deliveries, cite the shipment covering the item in question. Never disclose tracking for an order belonging to another customer. Related documents: Returns and exceptions; Order access and verification.\n\n## Reading the timeline\nUse the order's promised date and the carrier's final delivered timestamp in calendar days. A tracking link can lag the carrier; when the two disagree, record both values and ask an operator to reconcile the delivery proof. Do not use a label-created timestamp as a shipped timestamp.",
+          "sha256": "4ecaaaa20484a667918705687df2c0b12e9a125b4ba4bd9d48fc4393b210c01d",
+          "effective_from": "2025-10-01",
+          "effective_to": "2026-03-31",
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_policy_shipping_v1_s1",
+              "heading": "Delivery service and delay handling",
+              "page": 1,
+              "text": "Northstar Supply sends a tracking link after the carrier accepts the parcel. The promised delivery date on the order confirmation is an estimate; a tracking scan is not proof of delivery. If the final delivered scan is 10 or more calendar days after the promised date, support records a late-delivery flag. An in-transit order cannot be returned because no item has been received. Check the latest carrier event, then offer an operator ticket when tracking has not moved for five business days. For split deliveries, cite the shipment covering the item in question. Never disclose tracking for an order belonging to another customer. Related documents: Returns and exceptions; Order access and verification."
+            },
+            {
+              "id": "doc_ns_policy_shipping_v1_s2",
+              "heading": "Reading the timeline",
+              "page": 1,
+              "text": "Use the order's promised date and the carrier's final delivered timestamp in calendar days. A tracking link can lag the carrier; when the two disagree, record both values and ask an operator to reconcile the delivery proof. Do not use a label-created timestamp as a shipped timestamp."
+            }
+          ]
+        },
+        {
+          "id": "doc_ns_policy_shipping_v2",
+          "version": 2,
+          "content": "# Delivery service and delay handling\n\nNorthstar Supply sends a tracking link after the carrier accepts the parcel. The promised delivery date on the order confirmation is an estimate; a tracking scan is not proof of delivery. If the final delivered scan is 7 or more calendar days after the promised date, support records a late-delivery flag. An in-transit order cannot be returned because no item has been received. Check the latest carrier event, then offer an operator ticket when tracking has not moved for five business days. For split deliveries, cite the shipment covering the item in question. Never disclose tracking for an order belonging to another customer. Related documents: Returns and exceptions; Order access and verification.\n\n## Reading the timeline\nUse the order's promised date and the carrier's final delivered timestamp in calendar days. A tracking link can lag the carrier; when the two disagree, record both values and ask an operator to reconcile the delivery proof. Do not use a label-created timestamp as a shipped timestamp.",
+          "sha256": "592da4e4fb5e61b1005eba331d0d9d0ae23df6dc20bfb2fa6ff5bedd2c46c04b",
+          "effective_from": "2026-04-01",
+          "effective_to": null,
+          "published_at": "2026-03-25T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_policy_shipping_v2_s1",
+              "heading": "Delivery service and delay handling",
+              "page": 1,
+              "text": "Northstar Supply sends a tracking link after the carrier accepts the parcel. The promised delivery date on the order confirmation is an estimate; a tracking scan is not proof of delivery. If the final delivered scan is 7 or more calendar days after the promised date, support records a late-delivery flag. An in-transit order cannot be returned because no item has been received. Check the latest carrier event, then offer an operator ticket when tracking has not moved for five business days. For split deliveries, cite the shipment covering the item in question. Never disclose tracking for an order belonging to another customer. Related documents: Returns and exceptions; Order access and verification."
+            },
+            {
+              "id": "doc_ns_policy_shipping_v2_s2",
+              "heading": "Reading the timeline",
+              "page": 1,
+              "text": "Use the order's promised date and the carrier's final delivered timestamp in calendar days. A tracking link can lag the carrier; when the two disagree, record both values and ask an operator to reconcile the delivery proof. Do not use a label-created timestamp as a shipped timestamp."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_policy_returns",
+      "workspace_id": "ws_northstar",
+      "title": "Returns and exceptions",
+      "kind": "pdf",
+      "category": "returns",
+      "status": "published",
+      "authority": "official_policy",
+      "current_version": 2,
+      "versions": [
+        {
+          "id": "doc_ns_policy_returns_v1",
+          "version": 1,
+          "content": "# Returns and late-delivery exceptions\n\nFor purchases delivered under Northstar Supply's current policy, request a standard return within 45 calendar days of the recorded delivery date. Monitors have a 30-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 10 calendar days later than promised, a monitor request made within 50 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide.\n\n## Decision record\nRecord the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible.",
+          "sha256": "ca589403127702f19477eb17fbc634d451965b547c963ab76d0009d424ee0623",
+          "effective_from": "2025-10-01",
+          "effective_to": "2026-03-31",
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_policy_returns_v1_s1",
+              "heading": "Returns and late-delivery exceptions",
+              "page": 1,
+              "text": "For purchases delivered under Northstar Supply's current policy, request a standard return within 45 calendar days of the recorded delivery date. Monitors have a 30-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 10 calendar days later than promised, a monitor request made within 50 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide."
+            },
+            {
+              "id": "doc_ns_policy_returns_v1_s2",
+              "heading": "Decision record",
+              "page": 1,
+              "text": "Record the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible."
+            }
+          ]
+        },
+        {
+          "id": "doc_ns_policy_returns_v2",
+          "version": 2,
+          "content": "# Returns and late-delivery exceptions\n\nFor purchases delivered under Northstar Supply's current policy, request a standard return within 30 calendar days of the recorded delivery date. Monitors have a 21-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 7 calendar days later than promised, a monitor request made within 45 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide.\n\n## Decision record\nRecord the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible.",
+          "sha256": "8e58f72f3ab7613cd379dd6d04026c6472716d90a37aedf0cef55deb6c2a0049",
+          "effective_from": "2026-04-01",
+          "effective_to": null,
+          "published_at": "2026-03-25T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_policy_returns_v2_s1",
+              "heading": "Returns and late-delivery exceptions",
+              "page": 1,
+              "text": "For purchases delivered under Northstar Supply's current policy, request a standard return within 30 calendar days of the recorded delivery date. Monitors have a 21-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 7 calendar days later than promised, a monitor request made within 45 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide."
+            },
+            {
+              "id": "doc_ns_policy_returns_v2_s2",
+              "heading": "Decision record",
+              "page": 1,
+              "text": "Record the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_policy_compatibility",
+      "workspace_id": "ws_northstar",
+      "title": "Compatibility policy",
+      "kind": "markdown",
+      "category": "compatibility",
+      "status": "published",
+      "authority": "official_policy",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_policy_compatibility_v1",
+          "version": 1,
+          "content": "# Compatibility and fit\n\nCheck both VESA hole pattern and supported weight before pairing an arm with a monitor. The arm's listed screen size alone does not establish fit. USB-C docks need a host port that supports DisplayPort alternate mode for video; a USB-C charging port by itself is insufficient. Use the relevant manual for exact dimensions, power delivery, and clamp range. If the customer's laptop or monitor model is not in the supplied evidence, ask for its specifications rather than guessing. Related documents: individual product manuals; Assembly and first-use safety.\n\n## Evidence needed\nRecord the actual host device model, port capability, and any adapter in the signal path. For monitor mounting, record measured mass without stand and the VESA hole spacing. A broad family name does not establish compatibility; request the missing model or measurement.",
+          "sha256": "5ea80957db3994e69a5405a1f14691495d3e2d712b3793f941578d9aeebde452",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_policy_compatibility_v1_s1",
+              "heading": "Compatibility and fit",
+              "page": 1,
+              "text": "Check both VESA hole pattern and supported weight before pairing an arm with a monitor. The arm's listed screen size alone does not establish fit. USB-C docks need a host port that supports DisplayPort alternate mode for video; a USB-C charging port by itself is insufficient. Use the relevant manual for exact dimensions, power delivery, and clamp range. If the customer's laptop or monitor model is not in the supplied evidence, ask for its specifications rather than guessing. Related documents: individual product manuals; Assembly and first-use safety."
+            },
+            {
+              "id": "doc_ns_policy_compatibility_v1_s2",
+              "heading": "Evidence needed",
+              "page": 1,
+              "text": "Record the actual host device model, port capability, and any adapter in the signal path. For monitor mounting, record measured mass without stand and the VESA hole spacing. A broad family name does not establish compatibility; request the missing model or measurement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_policy_accounts",
+      "workspace_id": "ws_northstar",
+      "title": "Accounts policy",
+      "kind": "markdown",
+      "category": "accounts",
+      "status": "published",
+      "authority": "official_policy",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_policy_accounts_v1",
+          "version": 1,
+          "content": "# Order access and verification\n\nAn authenticated customer may view only orders bound to their server-side customer identity. An order number typed in a message never changes identity or authorizes a lookup. A guest uses the local verification challenge before any order detail is shown. Operators use role-bound console access and a workspace scope. If a customer quotes another person's order, decline the detail request and explain the verification step without confirming that the order exists. Related documents: Payments and receipts; Delivery service and delay handling.\n\n## Guest access\nThe local guest challenge is a simulated verification step tied to a scoped customer record. A failed or absent challenge reveals neither order existence nor shipment details. The authenticated customer's identity comes from the server session and is rechecked whenever an order is read or an action is proposed.",
+          "sha256": "1acccebac21fe8ad4b6a547d2bbffdc24b618bd967aaa141ceb80794dff8bfe8",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_policy_accounts_v1_s1",
+              "heading": "Order access and verification",
+              "page": 1,
+              "text": "An authenticated customer may view only orders bound to their server-side customer identity. An order number typed in a message never changes identity or authorizes a lookup. A guest uses the local verification challenge before any order detail is shown. Operators use role-bound console access and a workspace scope. If a customer quotes another person's order, decline the detail request and explain the verification step without confirming that the order exists. Related documents: Payments and receipts; Delivery service and delay handling."
+            },
+            {
+              "id": "doc_ns_policy_accounts_v1_s2",
+              "heading": "Guest access",
+              "page": 1,
+              "text": "The local guest challenge is a simulated verification step tied to a scoped customer record. A failed or absent challenge reveals neither order existence nor shipment details. The authenticated customer's identity comes from the server session and is rechecked whenever an order is read or an action is proposed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_hb_policy_returns",
+      "workspace_id": "ws_harbor",
+      "title": "Returns and exceptions",
+      "kind": "pdf",
+      "category": "returns",
+      "status": "published",
+      "authority": "official_policy",
+      "current_version": 2,
+      "versions": [
+        {
+          "id": "doc_hb_policy_returns_v1",
+          "version": 1,
+          "content": "# Returns and late-delivery exceptions\n\nFor purchases delivered under Harbor Workroom's current policy, request a standard return within 30 calendar days of the recorded delivery date. Monitors have a 21-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 13 calendar days later than promised, a monitor request made within 40 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide.\n\n## Decision record\nRecord the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible.",
+          "sha256": "6003b7623f588475a18f336ceda7396f849fd40c0d435d94ff68b932f60102ef",
+          "effective_from": "2025-10-01",
+          "effective_to": "2026-03-31",
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_policy_returns_v1_s1",
+              "heading": "Returns and late-delivery exceptions",
+              "page": 1,
+              "text": "For purchases delivered under Harbor Workroom's current policy, request a standard return within 30 calendar days of the recorded delivery date. Monitors have a 21-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 13 calendar days later than promised, a monitor request made within 40 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide."
+            },
+            {
+              "id": "doc_hb_policy_returns_v1_s2",
+              "heading": "Decision record",
+              "page": 1,
+              "text": "Record the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible."
+            }
+          ]
+        },
+        {
+          "id": "doc_hb_policy_returns_v2",
+          "version": 2,
+          "content": "# Returns and late-delivery exceptions\n\nFor purchases delivered under Harbor Workroom's current policy, request a standard return within 21 calendar days of the recorded delivery date. Monitors have a 14-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 10 calendar days later than promised, a monitor request made within 35 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide.\n\n## Decision record\nRecord the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible.",
+          "sha256": "748dd4d6a1a036866db43a576a639885384614b3d1b8650e2e519f9f8a717161",
+          "effective_from": "2026-04-01",
+          "effective_to": null,
+          "published_at": "2026-03-25T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_policy_returns_v2_s1",
+              "heading": "Returns and late-delivery exceptions",
+              "page": 1,
+              "text": "For purchases delivered under Harbor Workroom's current policy, request a standard return within 21 calendar days of the recorded delivery date. Monitors have a 14-day window because display panels require prompt inspection. Quantity requested cannot exceed purchased quantity less returns already recorded. Unopened items in saleable condition are eligible for a standard return; opened, damaged, incomplete, and uncertain-condition items require operator review. When the delivered scan is at least 10 calendar days later than promised, a monitor request made within 35 calendar days of delivery may be drafted as a late-delivery exception for operator review. A draft is not an approval or refund. An operator can approve, edit, reject, or allow it to expire; the approved version is the one executed. No money movement occurs in this pilot. Related documents: Delivery service and delay handling; Product inspection guide."
+            },
+            {
+              "id": "doc_hb_policy_returns_v2_s2",
+              "heading": "Decision record",
+              "page": 1,
+              "text": "Record the order line, purchased quantity, quantity already returned, item condition, delivered date, promised date, and applicable policy version. A late-delivery exception is reviewed by a person even when the dates meet the threshold. If evidence about condition or delivery is missing, request it before presenting the draft as eligible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_hb_policy_accounts",
+      "workspace_id": "ws_harbor",
+      "title": "Accounts policy",
+      "kind": "markdown",
+      "category": "accounts",
+      "status": "published",
+      "authority": "official_policy",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_hb_policy_accounts_v1",
+          "version": 1,
+          "content": "# Order access and verification\n\nAn authenticated customer may view only orders bound to their server-side customer identity. An order number typed in a message never changes identity or authorizes a lookup. A guest uses the local verification challenge before any order detail is shown. Operators use role-bound console access and a workspace scope. If a customer quotes another person's order, decline the detail request and explain the verification step without confirming that the order exists. Related documents: Payments and receipts; Delivery service and delay handling.\n\n## Guest access\nThe local guest challenge is a simulated verification step tied to a scoped customer record. A failed or absent challenge reveals neither order existence nor shipment details. The authenticated customer's identity comes from the server session and is rechecked whenever an order is read or an action is proposed.",
+          "sha256": "1acccebac21fe8ad4b6a547d2bbffdc24b618bd967aaa141ceb80794dff8bfe8",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_policy_accounts_v1_s1",
+              "heading": "Order access and verification",
+              "page": 1,
+              "text": "An authenticated customer may view only orders bound to their server-side customer identity. An order number typed in a message never changes identity or authorizes a lookup. A guest uses the local verification challenge before any order detail is shown. Operators use role-bound console access and a workspace scope. If a customer quotes another person's order, decline the detail request and explain the verification step without confirming that the order exists. Related documents: Payments and receipts; Delivery service and delay handling."
+            },
+            {
+              "id": "doc_hb_policy_accounts_v1_s2",
+              "heading": "Guest access",
+              "page": 1,
+              "text": "The local guest challenge is a simulated verification step tied to a scoped customer record. A failed or absent challenge reveals neither order existence nor shipment details. The authenticated customer's identity comes from the server session and is rechecked whenever an order is read or an action is proposed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_mon_001",
+      "workspace_id": "ws_northstar",
+      "title": "Aster Display 01 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_demo_monitor",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_mon_001_v1",
+          "version": 1,
+          "content": "# Aster Display 01 — Owner's manual\n\nModel: NS-MON-001 | Category: monitor | Northstar Supply\n\n## Specifications\n- Size in: 27\n- Resolution: 2560 × 1440\n- Refresh hz: 100\n- Vesa mm: 100 × 100\n- Power w: 33\n\n## Setup\nAttach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim.\n\n## Use and care\nIf the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "b24be36b8abb9f2324e20b2fdb3bc57128131073679d642ee36de2b0cc8147d1",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_mon_001_v1_s1",
+              "heading": "Aster Display 01 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-MON-001 | Category: monitor | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_001_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Size in: 27\n- Resolution: 2560 × 1440\n- Refresh hz: 100\n- Vesa mm: 100 × 100\n- Power w: 33"
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_001_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Attach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim."
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_001_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "If the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_001_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_mon_006",
+      "workspace_id": "ws_northstar",
+      "title": "Aster Display 06 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_monitor_06",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_mon_006_v1",
+          "version": 1,
+          "content": "# Aster Display 06 — Owner's manual\n\nModel: NS-MON-006 | Category: monitor | Northstar Supply\n\n## Specifications\n- Size in: 32\n- Resolution: 3840 × 2160\n- Refresh hz: 60\n- Vesa mm: 100 × 100\n- Power w: 43\n\n## Setup\nAttach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim.\n\n## Use and care\nIf the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "32964a3b3de9df76bdc52f8a587dbe210a44e381dbd7c3894434e1889c10599e",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_mon_006_v1_s1",
+              "heading": "Aster Display 06 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-MON-006 | Category: monitor | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_006_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Size in: 32\n- Resolution: 3840 × 2160\n- Refresh hz: 60\n- Vesa mm: 100 × 100\n- Power w: 43"
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_006_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Attach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim."
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_006_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "If the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_mon_006_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_des_001",
+      "workspace_id": "ws_northstar",
+      "title": "Beacon Sit-Stand Desk 01 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_desk_01",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_des_001_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 01 — Owner's manual\n\nModel: NS-DES-001 | Category: desk | Northstar Supply\n\n## Specifications\n- Width cm: 140\n- Depth cm: 70\n- Height range cm: 63–127\n- Load kg: 80\n- Surface: walnut veneer\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "97f05530158100efa5c207f07cff2b642197b4d5e2148473c00213a3066631f8",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_des_001_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 01 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-DES-001 | Category: desk | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_001_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 140\n- Depth cm: 70\n- Height range cm: 63–127\n- Load kg: 80\n- Surface: walnut veneer"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_001_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_001_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_001_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_des_006",
+      "workspace_id": "ws_northstar",
+      "title": "Beacon Sit-Stand Desk 06 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_desk_06",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_des_006_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 06 — Owner's manual\n\nModel: NS-DES-006 | Category: desk | Northstar Supply\n\n## Specifications\n- Width cm: 160\n- Depth cm: 75\n- Height range cm: 64–128\n- Load kg: 90\n- Surface: matte white laminate\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "71595135412b4ea9d84ce629575722ed982fa9a8b1e9399fc3285049d9f35529",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_des_006_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 06 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-DES-006 | Category: desk | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_006_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 160\n- Depth cm: 75\n- Height range cm: 64–128\n- Load kg: 90\n- Surface: matte white laminate"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_006_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_006_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_006_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_des_007",
+      "workspace_id": "ws_northstar",
+      "title": "Beacon Sit-Stand Desk 07 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_desk_07",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_des_007_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 07 — Owner's manual\n\nModel: NS-DES-007 | Category: desk | Northstar Supply\n\n## Specifications\n- Width cm: 180\n- Depth cm: 80\n- Height range cm: 65–129\n- Load kg: 100\n- Surface: ash veneer\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "69ee82779f33c624240a06cf632face60af180670086e01a7e8a35a90d51c79a",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_des_007_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 07 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-DES-007 | Category: desk | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_007_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 180\n- Depth cm: 80\n- Height range cm: 65–129\n- Load kg: 100\n- Surface: ash veneer"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_007_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_007_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_007_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_des_008",
+      "workspace_id": "ws_northstar",
+      "title": "Beacon Sit-Stand Desk 08 owner manual",
+      "kind": "pdf",
+      "category": "product_specs",
+      "product_id": "prod_ns_desk_08",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_des_008_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 08 — Owner's manual\n\nModel: NS-DES-008 | Category: desk | Northstar Supply\n\n## Specifications\n- Width cm: 120\n- Depth cm: 60\n- Height range cm: 62–126\n- Load kg: 70\n- Surface: birch laminate\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "e94026294b3da86a1080a32c535010d243c5ed71853612b493aacc1f2170a609",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_des_008_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 08 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-DES-008 | Category: desk | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_008_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 120\n- Depth cm: 60\n- Height range cm: 62–126\n- Load kg: 70\n- Surface: birch laminate"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_008_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_008_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_008_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_des_009",
+      "workspace_id": "ws_northstar",
+      "title": "Beacon Sit-Stand Desk 09 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_desk_09",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_des_009_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 09 — Owner's manual\n\nModel: NS-DES-009 | Category: desk | Northstar Supply\n\n## Specifications\n- Width cm: 140\n- Depth cm: 70\n- Height range cm: 63–127\n- Load kg: 80\n- Surface: walnut veneer\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "60124d030aecde4f3acb921d941ea5fce096e2c8059b69b1ec115994e2f956e9",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_des_009_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 09 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-DES-009 | Category: desk | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_009_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 140\n- Depth cm: 70\n- Height range cm: 63–127\n- Load kg: 80\n- Surface: walnut veneer"
+            },
+            {
+              "id": "doc_ns_manual_ns_des_009_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_009_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_des_009_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_ns_manual_ns_cha_001",
+      "workspace_id": "ws_northstar",
+      "title": "Cedar Task Chair 01 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_ns_chair_01",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_ns_manual_ns_cha_001_v1",
+          "version": 1,
+          "content": "# Cedar Task Chair 01 — Owner's manual\n\nModel: NS-CHA-001 | Category: chair | Northstar Supply\n\n## Specifications\n- Seat height cm: 42–53\n- Load kg: 120\n- Armrests: 2D adjustable\n- Back: woven fabric\n\n## Setup\nFit the casters before lowering the seat onto the gas lift. Set the seat height so feet rest flat; adjust the armrests without lifting by them. Retighten accessible fasteners after the first month.\n\n## Use and care\nDo not stand on the seat or use the armrests as lifting handles. Upholstery color may vary slightly by batch; ask for a photo if a defect is alleged. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "73763fabef75446f909ccf8a9b9bc9004428bc9d104af50770dd093298865af1",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_ns_manual_ns_cha_001_v1_s1",
+              "heading": "Cedar Task Chair 01 — Owner's manual",
+              "page": 1,
+              "text": "Model: NS-CHA-001 | Category: chair | Northstar Supply"
+            },
+            {
+              "id": "doc_ns_manual_ns_cha_001_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Seat height cm: 42–53\n- Load kg: 120\n- Armrests: 2D adjustable\n- Back: woven fabric"
+            },
+            {
+              "id": "doc_ns_manual_ns_cha_001_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Fit the casters before lowering the seat onto the gas lift. Set the seat height so feet rest flat; adjust the armrests without lifting by them. Retighten accessible fasteners after the first month."
+            },
+            {
+              "id": "doc_ns_manual_ns_cha_001_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not stand on the seat or use the armrests as lifting handles. Upholstery color may vary slightly by batch; ask for a photo if a defect is alleged. Keep the order number for support, but do not post it in a public forum. The Northstar Supply care guide covers general cleaning."
+            },
+            {
+              "id": "doc_ns_manual_ns_cha_001_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_hb_manual_hb_mon_001",
+      "workspace_id": "ws_harbor",
+      "title": "Aster Display 10 owner manual",
+      "kind": "pdf",
+      "category": "product_specs",
+      "product_id": "prod_hb_monitor_01",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_hb_manual_hb_mon_001_v1",
+          "version": 1,
+          "content": "# Aster Display 10 — Owner's manual\n\nModel: HB-MON-001 | Category: monitor | Harbor Workroom\n\n## Specifications\n- Size in: 32\n- Resolution: 3840 × 2160\n- Refresh hz: 60\n- Vesa mm: 100 × 100\n- Power w: 51\n\n## Setup\nAttach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim.\n\n## Use and care\nIf the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "828161ffb4daf84002e2ff3b0d5bb0d0897fb692f90c5e3b3d3f16946b11d9c9",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_manual_hb_mon_001_v1_s1",
+              "heading": "Aster Display 10 — Owner's manual",
+              "page": 1,
+              "text": "Model: HB-MON-001 | Category: monitor | Harbor Workroom"
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_001_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Size in: 32\n- Resolution: 3840 × 2160\n- Refresh hz: 60\n- Vesa mm: 100 × 100\n- Power w: 51"
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_001_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Attach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim."
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_001_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "If the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning."
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_001_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_hb_manual_hb_mon_002",
+      "workspace_id": "ws_harbor",
+      "title": "Aster Display 11 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_hb_monitor_02",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_hb_manual_hb_mon_002_v1",
+          "version": 1,
+          "content": "# Aster Display 11 — Owner's manual\n\nModel: HB-MON-002 | Category: monitor | Harbor Workroom\n\n## Specifications\n- Size in: 34\n- Resolution: 3440 × 1440\n- Refresh hz: 100\n- Vesa mm: 100 × 100\n- Power w: 53\n\n## Setup\nAttach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim.\n\n## Use and care\nIf the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "13a0aec0478405ab55ec2e3d94c0641b476a98f1360f10ba953bb8211d3c361a",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_manual_hb_mon_002_v1_s1",
+              "heading": "Aster Display 11 — Owner's manual",
+              "page": 1,
+              "text": "Model: HB-MON-002 | Category: monitor | Harbor Workroom"
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_002_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Size in: 34\n- Resolution: 3440 × 1440\n- Refresh hz: 100\n- Vesa mm: 100 × 100\n- Power w: 53"
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_002_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Attach the stand while the panel rests face down on clean padding. Select the correct video input in the display menu, then set the computer to the listed native resolution. Leave ventilation slots clear and retain the carton for a damage claim."
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_002_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "If the panel is cracked or emits a burning smell, disconnect it and open a support ticket. A single stuck pixel is assessed under the display inspection guide, not automatically a return approval. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning."
+            },
+            {
+              "id": "doc_hb_manual_hb_mon_002_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_hb_manual_hb_des_001",
+      "workspace_id": "ws_harbor",
+      "title": "Beacon Sit-Stand Desk 10 owner manual",
+      "kind": "pdf",
+      "category": "product_specs",
+      "product_id": "prod_hb_desk_01",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_hb_manual_hb_des_001_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 10 — Owner's manual\n\nModel: HB-DES-001 | Category: desk | Harbor Workroom\n\n## Specifications\n- Width cm: 160\n- Depth cm: 75\n- Height range cm: 64–128\n- Load kg: 90\n- Surface: matte white laminate\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "f83ba4154efc274fe51f910acbd51c2acf2486606549ece783b4764164b0e956",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_manual_hb_des_001_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 10 — Owner's manual",
+              "page": 1,
+              "text": "Model: HB-DES-001 | Category: desk | Harbor Workroom"
+            },
+            {
+              "id": "doc_hb_manual_hb_des_001_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 160\n- Depth cm: 75\n- Height range cm: 64–128\n- Load kg: 90\n- Surface: matte white laminate"
+            },
+            {
+              "id": "doc_hb_manual_hb_des_001_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_hb_manual_hb_des_001_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning."
+            },
+            {
+              "id": "doc_hb_manual_hb_des_001_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc_hb_manual_hb_des_002",
+      "workspace_id": "ws_harbor",
+      "title": "Beacon Sit-Stand Desk 11 owner manual",
+      "kind": "markdown",
+      "category": "product_specs",
+      "product_id": "prod_hb_desk_02",
+      "status": "published",
+      "authority": "product_manual",
+      "current_version": 1,
+      "versions": [
+        {
+          "id": "doc_hb_manual_hb_des_002_v1",
+          "version": 1,
+          "content": "# Beacon Sit-Stand Desk 11 — Owner's manual\n\nModel: HB-DES-002 | Category: desk | Harbor Workroom\n\n## Specifications\n- Width cm: 180\n- Depth cm: 80\n- Height range cm: 65–129\n- Load kg: 100\n- Surface: ash veneer\n\n## Setup\nLay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface.\n\n## Use and care\nDo not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning.\n\n## Service path\nThe receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement.",
+          "sha256": "13c819d0bc901fcfde4274d30ddc8c938a19413f6f92caf662379d491a12adf9",
+          "effective_from": "2025-10-01",
+          "effective_to": null,
+          "published_at": "2025-09-24T12:00:00+00:00",
+          "sections": [
+            {
+              "id": "doc_hb_manual_hb_des_002_v1_s1",
+              "heading": "Beacon Sit-Stand Desk 11 — Owner's manual",
+              "page": 1,
+              "text": "Model: HB-DES-002 | Category: desk | Harbor Workroom"
+            },
+            {
+              "id": "doc_hb_manual_hb_des_002_v1_s2",
+              "heading": "Specifications",
+              "page": 1,
+              "text": "- Width cm: 180\n- Depth cm: 80\n- Height range cm: 65–129\n- Load kg: 100\n- Surface: ash veneer"
+            },
+            {
+              "id": "doc_hb_manual_hb_des_002_v1_s3",
+              "heading": "Setup",
+              "page": 1,
+              "text": "Lay out both legs and the frame before tightening the desktop. Connect the handset after the frame is upright. Run the full height range with loose cable loops before placing monitors on the surface."
+            },
+            {
+              "id": "doc_hb_manual_hb_des_002_v1_s4",
+              "heading": "Use and care",
+              "page": 2,
+              "text": "Do not operate the motor while a child is under the frame. A handset error should be recorded with its exact code; power cycling is safe only after checking for obstruction. Keep the order number for support, but do not post it in a public forum. The Harbor Workroom care guide covers general cleaning."
+            },
+            {
+              "id": "doc_hb_manual_hb_des_002_v1_s5",
+              "heading": "Service path",
+              "page": 2,
+              "text": "The receipt's delivery date starts the return clock. Review the current Returns and late-delivery exceptions policy for category-specific windows. For a fault, record the symptom, power state, and steps tried before opening a warranty ticket. This manual does not itself authorize a return or replacement."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_ns_demo_001",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_demo_001",
+      "subject": "Return request for Aster Display 01",
+      "status": "open",
+      "updated_at": "2026-09-20T09:00:00+00:00",
+      "order_id": "ord_ns_demo_001",
+      "messages": [
+        {
+          "id": "msg_ns_demo_001",
+          "role": "customer",
+          "content": "My Aster Display 01 on NS-000001 arrived after the promised date. Can I return it?",
+          "created_at": "2026-09-20T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_demo_002",
+          "role": "assistant",
+          "content": "I can see the delivered scan was 12 days later than promised. The normal monitor window has ended, but your request may qualify for the late-delivery exception. I can draft it for operator review; no refund is issued now.",
+          "created_at": "2026-09-20T09:00:00+00:00",
+          "citations": [
+            "doc_ns_policy_returns_v2",
+            "doc_ns_policy_shipping_v2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0002",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0266",
+      "subject": "Fit question about Cedar Task Chair 03",
+      "status": "resolved",
+      "updated_at": "2026-09-13T09:00:00+00:00",
+      "order_id": "ord_ns_02321",
+      "messages": [
+        {
+          "id": "msg_ns_0002_1",
+          "role": "customer",
+          "content": "Will the Cedar Task Chair 03 fit my setup? I can send measurements if needed.",
+          "created_at": "2026-09-13T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0002_2",
+          "role": "assistant",
+          "content": "Please share the relevant measurements or device model so I can compare them with the manual instead of guessing.",
+          "created_at": "2026-09-13T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0003",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0622",
+      "subject": "Warranty coverage for Cedar Task Chair 01",
+      "status": "resolved",
+      "updated_at": "2025-11-05T09:00:00+00:00",
+      "order_id": "ord_ns_01918",
+      "messages": [
+        {
+          "id": "msg_ns_0003_1",
+          "role": "customer",
+          "content": "What coverage applies to a fault with my Cedar Task Chair 01?",
+          "created_at": "2025-11-05T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0003_2",
+          "role": "assistant",
+          "content": "Coverage depends on the category, delivery date, and cause of the fault. Please describe the symptom and any troubleshooting tried.",
+          "created_at": "2025-11-05T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0004",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0455",
+      "subject": "Setup help with Cedar Task Chair 06",
+      "status": "resolved",
+      "updated_at": "2026-06-12T10:00:00+00:00",
+      "order_id": "ord_ns_00931",
+      "messages": [
+        {
+          "id": "msg_ns_0004_1",
+          "role": "customer",
+          "content": "I am setting up the Cedar Task Chair 06 and need the key specifications.",
+          "created_at": "2026-06-12T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0004_2",
+          "role": "assistant",
+          "content": "The owner manual has the model-specific setup sequence and dimensions. Which step is causing trouble?",
+          "created_at": "2026-06-12T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0004_3",
+          "role": "customer",
+          "content": "Thanks. I can provide that detail. What should I send first?",
+          "created_at": "2026-06-12T10:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0004_4",
+          "role": "operator",
+          "content": "Please send the model label or measurement and a photo that does not show payment information.",
+          "created_at": "2026-06-12T10:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0005",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0282",
+      "subject": "Question about Grove USB-C Dock 05",
+      "status": "pending",
+      "updated_at": "2026-07-09T09:00:00+00:00",
+      "order_id": "ord_ns_01286",
+      "messages": [
+        {
+          "id": "msg_ns_0005_1",
+          "role": "customer",
+          "content": "Can you confirm whether the Grove USB-C Dock 05 works with my older laptop? I do not know the laptop model.",
+          "created_at": "2026-07-09T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0005_2",
+          "role": "assistant",
+          "content": "I cannot confirm compatibility without the laptop model and its USB-C video specification. Please share those details.",
+          "created_at": "2026-07-09T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0006",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0265",
+      "subject": "Delivery for NS-002280",
+      "status": "resolved",
+      "updated_at": "2026-06-15T09:00:00+00:00",
+      "order_id": "ord_ns_02280",
+      "messages": [
+        {
+          "id": "msg_ns_0006_1",
+          "role": "customer",
+          "content": "Could you check the latest status of order NS-002280? The carrier page is unclear.",
+          "created_at": "2026-06-15T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0006_2",
+          "role": "assistant",
+          "content": "I can check the shipment attached to your authenticated order. If its carrier scan is stale for five business days, I can prepare an operator ticket.",
+          "created_at": "2026-06-15T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0007",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0569",
+      "subject": "Return request for Ember Monitor Arm 04",
+      "status": "resolved",
+      "updated_at": "2026-09-12T09:00:00+00:00",
+      "order_id": "ord_ns_00745",
+      "messages": [
+        {
+          "id": "msg_ns_0007_1",
+          "role": "customer",
+          "content": "How does the return window apply to the Ember Monitor Arm 04 on NS-000745?",
+          "created_at": "2026-09-12T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0007_2",
+          "role": "assistant",
+          "content": "I will compare the delivery scan, item category, condition, quantity, and previous returns before drafting a request.",
+          "created_at": "2026-09-12T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_ns_0008",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0002",
+      "subject": "Fit question about Grove USB-C Dock 04",
+      "status": "resolved",
+      "updated_at": "2026-04-07T10:00:00+00:00",
+      "order_id": "ord_ns_01214",
+      "messages": [
+        {
+          "id": "msg_ns_0008_1",
+          "role": "customer",
+          "content": "Will the Grove USB-C Dock 04 fit my setup? I can send measurements if needed.",
+          "created_at": "2026-04-07T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0008_2",
+          "role": "assistant",
+          "content": "Please share the relevant measurements or device model so I can compare them with the manual instead of guessing.",
+          "created_at": "2026-04-07T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0008_3",
+          "role": "customer",
+          "content": "Thanks. I can provide that detail. What should I send first?",
+          "created_at": "2026-04-07T10:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_ns_0008_4",
+          "role": "operator",
+          "content": "Please send the model label or measurement and a photo that does not show payment information.",
+          "created_at": "2026-04-07T10:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_hb_0001",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0153",
+      "subject": "Return request for Aster Display 10",
+      "status": "resolved",
+      "updated_at": "2026-05-03T09:00:00+00:00",
+      "order_id": "ord_hb_00585",
+      "messages": [
+        {
+          "id": "msg_hb_0001_1",
+          "role": "customer",
+          "content": "How does the return window apply to the Aster Display 10 on HB-000585?",
+          "created_at": "2026-05-03T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_hb_0001_2",
+          "role": "assistant",
+          "content": "I will compare the delivery scan, item category, condition, quantity, and previous returns before drafting a request.",
+          "created_at": "2026-05-03T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_hb_0002",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0126",
+      "subject": "Fit question about Grove USB-C Dock 11",
+      "status": "resolved",
+      "updated_at": "2026-04-11T09:00:00+00:00",
+      "order_id": "ord_hb_00170",
+      "messages": [
+        {
+          "id": "msg_hb_0002_1",
+          "role": "customer",
+          "content": "Will the Grove USB-C Dock 11 fit my setup? I can send measurements if needed.",
+          "created_at": "2026-04-11T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_hb_0002_2",
+          "role": "assistant",
+          "content": "Please share the relevant measurements or device model so I can compare them with the manual instead of guessing.",
+          "created_at": "2026-04-11T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_hb_0003",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0087",
+      "subject": "Warranty coverage for Juniper Desk Accessory 11",
+      "status": "resolved",
+      "updated_at": "2026-09-24T09:00:00+00:00",
+      "order_id": "ord_hb_00374",
+      "messages": [
+        {
+          "id": "msg_hb_0003_1",
+          "role": "customer",
+          "content": "What coverage applies to a fault with my Juniper Desk Accessory 11?",
+          "created_at": "2026-09-24T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_hb_0003_2",
+          "role": "assistant",
+          "content": "Coverage depends on the category, delivery date, and cause of the fault. Please describe the symptom and any troubleshooting tried.",
+          "created_at": "2026-09-24T09:00:00+00:00",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "id": "conv_hb_0004",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0151",
+      "subject": "Setup help with Iris Acoustic Panel 11",
+      "status": "resolved",
+      "updated_at": "2026-09-05T10:00:00+00:00",
+      "order_id": "ord_hb_00288",
+      "messages": [
+        {
+          "id": "msg_hb_0004_1",
+          "role": "customer",
+          "content": "I am setting up the Iris Acoustic Panel 11 and need the key specifications.",
+          "created_at": "2026-09-05T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_hb_0004_2",
+          "role": "assistant",
+          "content": "The owner manual has the model-specific setup sequence and dimensions. Which step is causing trouble?",
+          "created_at": "2026-09-05T09:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_hb_0004_3",
+          "role": "customer",
+          "content": "Thanks. I can provide that detail. What should I send first?",
+          "created_at": "2026-09-05T10:00:00+00:00",
+          "citations": []
+        },
+        {
+          "id": "msg_hb_0004_4",
+          "role": "operator",
+          "content": "Please send the model label or measurement and a photo that does not show payment information.",
+          "created_at": "2026-09-05T10:00:00+00:00",
+          "citations": []
+        }
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "proposal_ns_demo_001",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_demo_001",
+      "conversation_id": "conv_ns_demo_001",
+      "order_id": "ord_ns_demo_001",
+      "line_id": "line_ns_demo_001",
+      "quantity": 1,
+      "condition": "unopened",
+      "reason": "late_delivery",
+      "policy_result": "late_delivery_exception",
+      "status": "pending_review",
+      "requires_review": true,
+      "version": 1,
+      "expires_at": "2026-10-04T23:00:00+00:00",
+      "created_at": "2026-09-26T11:00:00+00:00",
+      "reviewed_at": null,
+      "reviewer_id": null
+    },
+    {
+      "id": "proposal_ns_002",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0246",
+      "conversation_id": null,
+      "order_id": "ord_ns_02333",
+      "line_id": "line_ns_02333_1",
+      "quantity": 1,
+      "condition": "opened",
+      "reason": "wrong_fit",
+      "policy_result": "review_required",
+      "status": "approved",
+      "requires_review": true,
+      "version": 2,
+      "expires_at": "2026-09-22T23:00:00+00:00",
+      "created_at": "2026-09-15T11:00:00+00:00",
+      "reviewed_at": "2026-09-16T11:00:00+00:00",
+      "reviewer_id": "user_ns_operator"
+    },
+    {
+      "id": "proposal_ns_003",
+      "workspace_id": "ws_northstar",
+      "customer_id": "cust_ns_0048",
+      "conversation_id": null,
+      "order_id": "ord_ns_01278",
+      "line_id": "line_ns_01278_1",
+      "quantity": 1,
+      "condition": "unknown",
+      "reason": "damaged",
+      "policy_result": "ineligible",
+      "status": "rejected",
+      "requires_review": true,
+      "version": 2,
+      "expires_at": "2026-09-20T23:00:00+00:00",
+      "created_at": "2026-09-13T11:00:00+00:00",
+      "reviewed_at": "2026-09-14T11:00:00+00:00",
+      "reviewer_id": "user_ns_operator"
+    },
+    {
+      "id": "proposal_hb_001",
+      "workspace_id": "ws_harbor",
+      "customer_id": "cust_hb_0030",
+      "conversation_id": null,
+      "order_id": "ord_hb_00355",
+      "line_id": "line_hb_00355_1",
+      "quantity": 1,
+      "condition": "unopened",
+      "reason": "changed_mind",
+      "policy_result": "eligible",
+      "status": "pending_review",
+      "requires_review": true,
+      "version": 1,
+      "expires_at": "2026-10-04T23:00:00+00:00",
+      "created_at": "2026-09-25T11:00:00+00:00",
+      "reviewed_at": null,
+      "reviewer_id": null
+    }
+  ]
+}
